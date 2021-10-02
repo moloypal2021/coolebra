@@ -1,0 +1,248 @@
+/* ========= Import Font start ========= */
+
+/* Font Latto */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Font Inter */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Font Anthology */
+
+@import url('http://fonts.cdnfonts.com/css/anthology');
+/*======= Import Font End ======= */
+
+/* ========= Font Familly ======= */
+
+.font-latto {
+    font-family: 'Lato', sans-serif !important;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.font-anthology {
+    font-family: 'AnthologY', sans-serif !important;
+}
+
+/* ====== Font Weight ======= */
+
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.font-weight-semibold {
+    font-weight: 600 !important;
+}
+
+.font-weight-extrabold {
+    font-weight: 800 !important;
+}
+
+.font-weight-black {
+    font-weight: 900 !important;
+}
+
+/* ================================= Colors =========================== */
+
+/* Color Variable */
+
+:root {
+    --gray-100: #E9ECEF;
+    --gray-200: #D2D6DA;
+    --gray-600: #67748E;
+    --gray-900: #343A40;
+    --info-300: #17A2B8;
+    --dark-100: #212529;
+}
+
+/* ---- Background Color ----- */
+
+.bg-info-300 {
+    background-color: var(--info-300) !important;
+}
+
+.bg-gray-100 {
+    background-color: var(--gray-100) !important;
+}
+
+.bg-gradient-blue-purple {
+    background: linear-gradient(60.04deg, #3358DE 0%, #682296 50%, #F50FA5 100%);
+}
+
+/* ---- Text Color ----- */
+
+.text-dark-100 {
+    color: var(--dark-100);
+}
+
+.text-gray-600 {
+    color: var(--gray-600);
+}
+
+.text-gray-900 {
+    color: var(--gray-900);
+}
+
+.text-gradient-blue-purple {
+    background: linear-gradient(60.04deg, #3358DE 0%, #682296 50%, #F50FA5 100%) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-purple {
+    color: #682296;
+}
+
+/* -------- Border Color --------- */
+
+.border-gray-200 {
+    border-color: var(--gray-200) !important;
+}
+
+/* ======= Shadow ========== */
+
+.shadow-2 {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-3 {
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-10 {
+    filter: drop-shadow(0px 8px 16px rgba(155, 134, 165, 0.25)) !important;
+}
+
+/* ============ Border Radius =============== */
+
+.rounded-8px {
+    border-radius: 8px;
+}
+
+.rounded-16px {
+    border-radius: 16px;
+}
+
+/* ========= Object ========== */
+
+.object-cover {
+    object-fit: cover;
+}
+
+.object-center {
+    object-position: center;
+}
+
+/* =========== NavBar ============ */
+
+.navbar-brand .logo {
+    height: 24px;
+}
+
+@media (min-width: 992px) {
+    .navbar-brand .logo {
+        height: 32px;
+    }
+}
+
+.searchbar {
+    position: relative;
+}
+
+.searchbar input {
+    display: none;
+    background-color: #fff;
+    border: 1px solid var(--gray-200) !important;
+    border-radius: 8px !important;
+    position: absolute !important;
+    width: 280px !important;
+    top: 48px;
+    right: -32px;
+    z-index: 9999;
+}
+
+@media (min-width: 991px) {
+    .searchbar {
+        width: 250px !important;
+        border: 1px solid var(--gray-200);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .searchbar input {
+        display: block;
+        position: relative !important;
+        width: 280px !important;
+        top: 0;
+        right: 0;
+        border: 0 !important;
+        z-index: 9999;
+    }
+}
+
+@media (min-width: 1200px) {
+    .searchbar {
+        width: 360px !important;
+    }
+}
+
+/* ==== Breadcumb ====== */
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--gray-600) !important;
+}
+
+/* =========== Product Card Start ============== */
+
+.product-card {
+    width: 280px;
+}
+
+.product-card .card-body {
+    padding: 8px;
+}
+
+.product-img {
+    height: 190px;
+}
+
+.card-comapny-icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 10000 !important;
+}
+
+.card-comapny-icon img {
+    background: #ffffff;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+/* Card Vista Mobile */
+
+.vista-active .product-card {
+    width: 175px;
+}
+
+.vista-active .product-card .card-body {
+    padding: 8px;
+}
+
+.vista-active .product-card .card-comapny-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.vista-active .product-card .product-img {
+    height: 132px;
+}
+
+.vista-active .product-title {
+    font-size: 11px;
+}
+
+.vista-active .product-details {
+    font-size: 11px;
+}
