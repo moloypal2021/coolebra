@@ -50,6 +50,7 @@
 :root {
     --gray-100: #E9ECEF;
     --gray-200: #D2D6DA;
+    --gray-300: #F8F9FA;
     --gray-600: #67748E;
     --gray-900: #343A40;
     --info-300: #17A2B8;
@@ -64,6 +65,10 @@
 
 .bg-gray-100 {
     background-color: var(--gray-100) !important;
+}
+
+.bg-gray-300 {
+    background-color: var(--gray-300) !important;
 }
 
 .bg-gradient-blue-purple {
@@ -98,6 +103,10 @@
 
 .border-gray-200 {
     border-color: var(--gray-200) !important;
+}
+
+.border-gray-300 {
+    border-color: var(--gray-300) !important;
 }
 
 /* ======= Shadow ========== */
@@ -221,7 +230,8 @@
 }
 
 .product-card .card-tools {
-    margin-top: -24px;
+    transform: translateY(-70%);
+    margin-bottom: -20px;
     z-index: 20;
 }
 
@@ -249,6 +259,45 @@
     height: 20px;
 }
 
+.product-card .card-week {
+    padding: 4px 8px 8px 8px;
+}
+
+.product-card .card-week-title {
+    font-size: 12px;
+}
+
+.product-card .week {
+    width: 37px;
+    height: 32px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DEE2E6;
+    border-radius: 50px;
+    margin: 0px 1px;
+}
+
+.product-card .week.active {
+    background: #E9ECEF;
+    border-color: #E9ECEF;
+}
+
+.product-card .card-footer {
+    padding: 12px 8px;
+}
+
+.product-card .footer-text {
+    font-size: 12.8px;
+    font-weight: 600;
+    color: var(--dark-100);
+}
+
+.product-card .footer-img {
+    width: 108px;
+}
+
 /* Card Vista Mobile */
 
 .vista-active .product-card {
@@ -256,7 +305,7 @@
 }
 
 .vista-active .product-card .card-body {
-    padding: 8px;
+    padding: 4px;
 }
 
 .vista-active .product-card .card-comapny-icon img {
@@ -293,4 +342,30 @@
 .vista-active .product-card .card-action svg {
     width: 16px;
     height: 16px;
+}
+
+.vista-active .product-card .card-week-title {
+    font-size: 10px;
+}
+
+.vista-active .product-card .card-week {
+    padding: 4px;
+}
+
+.vista-active .product-card .week {
+    width: 21px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.vista-active .product-card .card-footer {
+    padding: 8px;
+}
+
+.vista-active .product-card .footer-text {
+    font-size: 10px;
+}
+
+.vista-active .product-card .footer-img {
+    width: 72px;
 }
