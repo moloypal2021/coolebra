@@ -220,6 +220,35 @@
     border-radius: 50%;
 }
 
+.product-card .card-tools {
+    margin-top: -24px;
+    z-index: 20;
+}
+
+.product-card .card-badge {
+    font-size: 14px;
+    font-weight: 700;
+    background: var(--info-300);
+    border-radius: 40px;
+    padding: 4px 16px;
+}
+
+.product-card .card-action {
+    background: #fff;
+    padding: 10px;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.product-card .card-action svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* Card Vista Mobile */
 
 .vista-active .product-card {
@@ -245,4 +274,23 @@
 
 .vista-active .product-details {
     font-size: 11px;
+}
+
+.vista-active .product-card .card-badge {
+    font-size: 10px;
+    font-weight: 500;
+    background: var(--info-300);
+    border-radius: 40px;
+    padding: 4px 8px;
+}
+
+.vista-active .product-card .card-action {
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.vista-active .product-card .card-action svg {
+    width: 16px;
+    height: 16px;
 }
