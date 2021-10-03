@@ -101,10 +101,10 @@
     </nav>
 
 
-    <div class="container max-w-1440px px-0 ">
+    <div class="container max-w-1440px px-0">
         <div class="d-flex">
-            <nav class="d-lg-block bg-white sidebar filterbar collapse position-relative" id="filter-bar">
-                <div class="navbar bg-white shadow-2 sticky-top py-2">
+            <nav class="d-lg-block bg-white sidebar filterbar collapse" id="filter-bar">
+                <div class="navbar bg-white shadow-2 py-2">
                     <div class="d-flex w-100 align-items-center justify-content-between">
                         <button class="btn filter-button">
                             <svg width="52" height="24" viewBox="0 0 52 24" fill="none"
@@ -138,9 +138,9 @@
             </nav>
 
             <main class="w-100 ms-sm-auto pt-5">
-                <div class="container max-w-888px ms-lg-3 ms-xl-4">
+                <div class="container max-w-915px px-0 ms-lg-3 ms-xl-4">
 
-                    <div class="px-3 pt-5">
+                    <div class="px-2 px-sm-3 pt-5">
                         <!-- Breadcumb Start -->
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb align-items-center text-gray-600">
@@ -187,9 +187,10 @@
                     <!-- Product Card Start -->
                     <!-- Active vista card to add vista-active class -->
                     <div class="position-relative">
-                        <div class="bg-white py-2 w-100 sticky-top top-55px px-3 mb-3 d-block d-lg-none"
+                        <!-- Filter Sticky Bar -->
+                        <div class="bg-white py-2 px-2 px-sm-3 w-100 sticky-top top-55px mb-3 d-block d-lg-none"
                             style="z-index: 1029;">
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between px-1">
                                 <div>
                                     <button class="btn px-0 d-flex align-items-center filter-button">
                                         <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
@@ -232,8 +233,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row gy-3 gx-1 g-sm-3 vista-row vista-activ mb-5 px-4">
-                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 vista-col">
+                        <!-- Cards -->
+                        <div
+                            class="d-flex flex-wrap justify-content-center vista-row vista-activ mb-5 px-2 px-sm-3 -mx-2">
+                            <div class="p-1 p-sm-2 vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -330,7 +333,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 vista-col">
+                            <div class="p-1 p-sm-2 vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -427,7 +430,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 vista-col">
+                            <div class="p-1 p-sm-2 vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -524,7 +527,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 vista-col">
+                            <div class="p-1 p-sm-2 vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -621,7 +624,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 vista-col">
+                            <div class="p-1 p-sm-2 vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -718,7 +721,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 vista-col">
+                            <div class="p-1 p-sm-2 vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -859,13 +862,16 @@
             $("#vista").click(function (e) {
                 if (vista = !vista) {
                     $(".vista-row").removeClass("mx-auto").addClass("vista-active ");
-                    $(".vista-col").removeClass("col-md-4 col-sm-6").addClass("col-md-3 col-sm-4 col-6");
-                    $(".vista-col").children().removeClass("mx-auto mx-sm-0 mobile-width");
+                    // $(".vista-col").removeClass("w-100");
+                    // $(".vista-col").removeClass("col-md-4 col-sm-6").addClass("col-md-3 col-sm-4 col-6");
+                    // $(".vista-col").children().removeClass("mx-auto mx-sm-0 mobile-width");
 
                 } else {
-                    $(".vista-row").removeClass("vista-active px-3").addClass("mx-auto");
-                    $(".vista-col").removeClass("col-md-3 col-sm-4 col-6").addClass("col-md-4 col-sm-6");
-                    $(".vista-col").children().addClass("mx-auto mx-sm-0 mobile-width");
+                    $(".vista-row").removeClass("vista-active").addClass("mx-auto");
+                    // $(".vista-col").addClass("w-100");
+                    // $(".vista-col").children().addClass("mx-auto ");
+                    // $(".vista-col").removeClass("col-md-3 col-sm-4 col-6").addClass("col-md-4 col-sm-6");
+                    // $(".vista-col").children().addClass("mx-auto mx-sm-0 mobile-width");
 
                 }
 

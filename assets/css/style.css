@@ -176,12 +176,25 @@
 
 /* ========== Max Width ============= */
 
-.max-w-888px {
-    max-width: 888px;
+.max-w-915px {
+    max-width: 915px;
 }
 
 .max-w-1440px {
     max-width: 1440px;
+}
+
+/* ============== Margin ================ */
+
+.-mx-2 {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/* ======== Padding =========  */
+
+.p-0\.5 {
+    padding: 2px
 }
 
 /* =========== NavBar ============ */
@@ -279,10 +292,8 @@
 
 /* =========== Product Card Start ============== */
 
-@media (max-width: 575px) {
-    .product-card.mobile-width {
-        max-width: 280px;
-    }
+.product-card {
+    width: 280px;
 }
 
 .product-card .card-body {
@@ -381,7 +392,7 @@
 
 @media (max-width: 991px) {
     .vista-active .product-card {
-        /* max-width: 175px; */
+        width: 175px;
     }
     .vista-active .product-card .card-body {
         padding: 4px;
@@ -423,8 +434,9 @@
     }
     .vista-active .product-card .week {
         width: 21px;
-        height: 20px;
+        height: 18px;
         font-size: 10px;
+        border-radius: 9px;
     }
     .vista-active .product-card .card-footer {
         padding: 8px;
@@ -440,7 +452,7 @@
 /* ********* Filter Section Start *********** */
 
 .filterbar {
-    min-width: 345px !important;
+    width: 345px !important;
     min-height: 100%;
     box-shadow: 16px 8px 16px rgba(0, 0, 0, 0.08);
     ;
@@ -448,6 +460,7 @@
 
 @media (max-width: 991px) {
     .filterbar {
+        left: 0;
         position: fixed;
         z-index: 999999;
     }
@@ -455,6 +468,6 @@
 
 @media (max-width: 576px) {
     .filterbar {
-        width: 100%;
+        width: 100% !important;
     }
 }
