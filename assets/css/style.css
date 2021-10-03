@@ -8,7 +8,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* Font Anthology */
 
-@import url('http://fonts.cdnfonts.com/css/anthology');
+/* @import url('http://fonts.cdnfonts.com/css/anthology'); */
+
+@font-face {
+    font-family: 'AnthologY';
+    font-style: normal;
+    font-weight: 400;
+    src: local('AnthologY'), url('../font/anthology-regular-demo.ttf') format('ttf');
+}
+
 /*======= Import Font End ======= */
 
 /* ========= Font Familly ======= */
@@ -173,7 +181,7 @@
 
 @media (min-width: 991px) {
     .searchbar {
-        width: 250px !important;
+        width: 240px !important;
         border: 1px solid var(--gray-200);
         border-radius: 8px;
         overflow: hidden;
@@ -204,7 +212,7 @@
 /* =========== Product Card Start ============== */
 
 .product-card {
-    width: 280px;
+    /* width: 280px; */
 }
 
 .product-card .card-body {
@@ -241,6 +249,7 @@
     background: var(--info-300);
     border-radius: 40px;
     padding: 4px 16px;
+    white-space: nowrap;
 }
 
 .product-card .card-action {
@@ -301,7 +310,7 @@
 /* Card Vista Mobile */
 
 .vista-active .product-card {
-    width: 175px;
+    /* width: 175px; */
 }
 
 .vista-active .product-card .card-body {
