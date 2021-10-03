@@ -51,6 +51,14 @@
     font-weight: 900 !important;
 }
 
+/***** Font Size *****/
+
+.text-sm {
+    font-size: 14px;
+}
+
+/***** End Font Size *****/
+
 /* ================================= Colors =========================== */
 
 /* Color Variable */
@@ -63,6 +71,7 @@
     --gray-900: #343A40;
     --info-300: #17A2B8;
     --dark-100: #212529;
+    --purple-100: #682296;
 }
 
 /* ---- Background Color ----- */
@@ -103,8 +112,8 @@
     -webkit-text-fill-color: transparent;
 }
 
-.text-purple {
-    color: #682296;
+.text-purple-100 {
+    color: var(--purple-100);
 }
 
 /* -------- Border Color --------- */
@@ -149,6 +158,20 @@
 
 .object-center {
     object-position: center;
+}
+
+/* ****** Top/Bottom/Right/left ******** */
+
+.left-none {
+    left: auto !important;
+}
+
+.right-0 {
+    right: 0 !important;
+}
+
+.top-55px {
+    top: 55px;
 }
 
 /* =========== NavBar ============ */
@@ -207,6 +230,41 @@
 
 .breadcrumb-item+.breadcrumb-item::before {
     color: var(--gray-600) !important;
+}
+
+.breadcumb-title h2 {
+    font-size: 18px !important;
+}
+
+.breadcumb-title p {
+    font-size: 12px !important;
+}
+
+@media (min-width: 576px) {
+    .breadcumb-title h2 {
+        font-size: 20px !important;
+    }
+    .breadcumb-title p {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .breadcumb-title h2 {
+        font-size: 24px !important;
+    }
+    .breadcumb-title p {
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .breadcumb-title h2 {
+        font-size: 28px !important;
+    }
+    .breadcumb-title p {
+        font-size: 20px !important;
+    }
 }
 
 /* =========== Product Card Start ============== */
@@ -377,4 +435,13 @@
 
 .vista-active .product-card .footer-img {
     width: 72px;
+}
+
+/* ********* Filter Section Start *********** */
+
+@media (max-width: 992px) {
+    .filterbar {
+        position: fixed;
+        z-index: 999999;
+    }
 }
