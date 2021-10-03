@@ -103,9 +103,8 @@
 
     <div class="container-fluid px-0 ">
         <div class="d-flex">
-            <nav class="d-lg-block bg-white shadow-3 sidebar filterbar collapse" id="filter-bar"
-                style="width: 345px; min-height: 100%;">
-                <div class="navbar bg-white shadow-2 py-2">
+            <nav class="d-lg-block bg-white shadow-3 sidebar filterbar collapse position-relative" id="filter-bar">
+                <div class="navbar bg-white shadow-2 sticky-top py-2">
                     <div class="d-flex w-100 align-items-center justify-content-between">
                         <button class="btn filter-button">
                             <svg width="52" height="24" viewBox="0 0 52 24" fill="none"
@@ -205,7 +204,7 @@
                                 </button>
                             </div>
                             <div>
-                                <button class="btn px-0 d-flex align-items-center">
+                                <button class="btn px-0 shadow-none d-flex align-items-center" id="vista">
                                     <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -235,8 +234,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row gy-3 gx-1 g-sm-3 vista-activ mb-5 px-3">
-                        <div class="col-md-4 col-sm-6 vista-col">
+                    <div class="row gy-3 gx-1 g-sm-3 vista-row vista-activ mb-5 px-4">
+                        <div class="col-lg-4 col-md-4 col-sm-6 vista-col">
                             <div class="card mx-auto product-card shadow-2 rounded-16px overflow-hidden shadow-10">
                                 <div class="position-relative">
                                     <img src="./assets/images/img-1.jpg"
@@ -330,7 +329,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 vista-col">
+                        <div class="col-lg-4 col-md-4 col-sm-6 vista-col">
                             <div class="card mx-auto product-card shadow-2 rounded-16px overflow-hidden shadow-10">
                                 <div class="position-relative">
                                     <img src="./assets/images/img-2.jpg"
@@ -424,7 +423,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 vista-col">
+                        <div class="col-lg-4 col-md-4 col-sm-6 vista-col">
                             <div class="card mx-auto product-card shadow-2 rounded-16px overflow-hidden shadow-10">
                                 <div class="position-relative">
                                     <img src="./assets/images/img-3.jpg"
@@ -518,7 +517,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 vista-col">
+                        <div class="col-lg-4 col-md-4 col-sm-6 vista-col">
                             <div class="card mx-auto product-card shadow-2 rounded-16px overflow-hidden shadow-10">
                                 <div class="position-relative">
                                     <img src="./assets/images/img-1.jpg"
@@ -612,7 +611,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 vista-col">
+                        <div class="col-lg-4 col-md-4 col-sm-6 vista-col">
                             <div class="card mx-auto product-card shadow-2 rounded-16px overflow-hidden shadow-10">
                                 <div class="position-relative">
                                     <img src="./assets/images/img-2.jpg"
@@ -706,7 +705,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 vista-col">
+                        <div class="col-lg-4 col-md-4 col-sm-6 vista-col">
                             <div class="card mx-auto product-card shadow-2 rounded-16px overflow-hidden shadow-10">
                                 <div class="position-relative">
                                     <img src="./assets/images/img-3.jpg"
@@ -833,6 +832,25 @@
                 e.preventDefault();
                 $("#filter-bar").toggle();
             });
+
+        })
+
+        // When your page loads
+        $(function () {
+            var vista = false;
+            // When the toggle areas in your navbar are clicked, toggle them
+            $("#vista").click(function (e) {
+                if (vista = !vista) {
+                    $(".vista-row").removeClass("px-4 px-sm-3").addClass("vista-active px-3");
+                    $(".vista-col").removeClass("col-md-4 col-sm-6").addClass("col-md-3 col-sm-4 col-6");
+
+                } else {
+                    $(".vista-row").removeClass("vista-active px-3").addClass("px-4 px-sm-3");
+                    $(".vista-col").removeClass("col-md-3 col-sm-4 col-6").addClass("col-md-4 col-sm-6");
+                }
+
+            });
+
         })
 
     </script>

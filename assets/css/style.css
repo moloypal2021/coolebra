@@ -439,9 +439,20 @@
 
 /* ********* Filter Section Start *********** */
 
+.filterbar {
+    width: 345px;
+    min-height: 100%;
+}
+
 @media (max-width: 992px) {
     .filterbar {
         position: fixed;
         z-index: 999999;
+    }
+}
+
+@media (max-width: 576px) {
+    .filterbar {
+        width: 100%;
     }
 }
