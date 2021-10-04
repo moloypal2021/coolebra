@@ -588,7 +588,7 @@
     height: 32px;
     width: 37px;
     margin-right: 3px;
-    line-height: 30px;
+    line-height: 32px;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
@@ -599,6 +599,7 @@
 .weekDays-selector .weekday:checked+label {
     /* background: #2ad705; */
     color: #212529;
+    border: 0;
 }
 
 .weekDays-selector .weekday:checked+label::after {
@@ -620,10 +621,10 @@
 
 .weekDays-selector .weekday:checked+label::after {
     z-index: -1;
-    top: 1px;
+    top: 1.4px;
     left: 1px;
-    width: 34px;
-    height: 30px;
+    width: 33px;
+    height: 29px;
     background: #fff;
     display: block;
     content: "";
