@@ -597,9 +597,8 @@
 }
 
 .weekDays-selector .weekday:checked+label {
-    /* background: #2ad705; */
     color: #212529;
-    border: 0;
+    border: 1px solid rgba(0, 0, 0, 0.0);
 }
 
 .weekDays-selector .weekday:checked+label::after {
@@ -610,7 +609,9 @@
 .weekDays-selector .weekday:checked+label::before {
     z-index: -3;
     top: 0px;
+    bottom: 0px;
     left: 0px;
+    right: 0px;
     width: 36px;
     height: 32px;
     background: linear-gradient(45deg, #3358DE 0%, #682296 50%, #F50FA5 100%);
@@ -621,15 +622,16 @@
 
 .weekDays-selector .weekday:checked+label::after {
     z-index: -1;
-    top: 1.4px;
-    left: 1px;
-    width: 33px;
-    height: 29px;
+    top: 2.2px;
+    left: 2.4px;
+    /* margin: auto; */
+    width: 31.5px;
+    height: 27.2px;
     background: #fff;
     display: block;
     content: "";
     position: absolute;
-    border-radius: 15px;
+    border-radius: 13px;
 }
 
 .custom-check {
