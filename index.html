@@ -102,8 +102,9 @@
 
 
     <div class="container max-w-1440px px-0">
-        <div class="d-flex">
+        <div class="d-flex position-relative">
             <nav class="d-lg-block bg-white sidebar filterbar collapse" id="filter-bar">
+                <!-- Filter Mobile Navbar -->
                 <div class="navbar bg-white shadow-2 py-2">
                     <div class="d-flex w-100 align-items-center justify-content-between">
                         <button class="btn filter-button">
@@ -135,10 +136,121 @@
                         <a href="#" class="nav-link text-purple-100">Limpiar</a>
                     </div>
                 </div>
-            </nav>
 
-            <main class="w-100 ms-sm-auto pt-5">
-                <div class="container max-w-915px px-0 ms-lg-3 ms-xl-4">
+                <!-- Filter -->
+                <div class="px-3 pt-4 filter-area bg-white">
+                    <h4 class="font-inter fw-bold text-black mb-12px">Filtro</h4>
+                    <input type="text" class="form-control font-lato px-4 py-12px text-dark-100"
+                        placeholder="Filtrar por palabras">
+                    <h6 class="text-black fw-bold font-lato pt-4 mt-2 mb-4">Descuento</h6>
+                    <div class="d-flex align-items-center mb-4 pb-1">
+                        <input type="text" class="form-control font-inter text-gray-600 w-96px" placeholder="%20"
+                            value="%20">
+                        <svg class="mx-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.64689 1.77971C4.69334 1.73314 4.74851 1.6962 4.80926 1.67099C4.87001 1.64579 4.93513 1.63281 5.00089 1.63281C5.06666 1.63281 5.13178 1.64579 5.19253 1.67099C5.25327 1.6962 5.30845 1.73314 5.35489 1.77971L11.3549 7.77971C11.4015 7.82615 11.4384 7.88133 11.4636 7.94207C11.4888 8.00282 11.5018 8.06794 11.5018 8.13371C11.5018 8.19947 11.4888 8.26459 11.4636 8.32534C11.4384 8.38608 11.4015 8.44126 11.3549 8.48771L5.35489 14.4877C5.26101 14.5816 5.13367 14.6343 5.00089 14.6343C4.86812 14.6343 4.74078 14.5816 4.64689 14.4877C4.55301 14.3938 4.50026 14.2665 4.50026 14.1337C4.50026 14.0009 4.55301 13.8736 4.64689 13.7797L10.2939 8.13371L4.64689 2.48771C4.60033 2.44126 4.56339 2.38609 4.53818 2.32534C4.51297 2.26459 4.5 2.19947 4.5 2.13371C4.5 2.06794 4.51297 2.00282 4.53818 1.94207C4.56339 1.88133 4.60033 1.82615 4.64689 1.77971Z"
+                                fill="#67748E" />
+                        </svg>
+                        <input type="text" class="form-control font-inter text-gray-600 w-96px" placeholder="100%"
+                            value="100%">
+                    </div>
+                    <div class="pt-3 border-t-0.5">
+                        <h6 class="font-inter fw-bold text-black mb-12px">Días de la semana</h6>
+
+                        <div class="weekDays-selector mb-4">
+                            <input type="checkbox" id="weekday-mon" class="weekday" />
+                            <label class="font-inter" for="weekday-mon">L</label>
+                            <input type="checkbox" id="weekday-tue" checked class="weekday" />
+                            <label class="font-inter" for="weekday-tue">M</label>
+                            <input type="checkbox" id="weekday-wed" class="weekday" />
+                            <label class="font-inter" for="weekday-wed">M</label>
+                            <input type="checkbox" id="weekday-thu" checked class="weekday" />
+                            <label class="font-inter" for="weekday-thu">J</label>
+                            <input type="checkbox" id="weekday-fri" class="weekday" />
+                            <label class="font-inter" for="weekday-fri">V</label>
+                            <input type="checkbox" id="weekday-sat" class="weekday" />
+                            <label class="font-inter" for="weekday-sat">S</label>
+                            <input type="checkbox" id="weekday-sun" class="weekday" />
+                            <label class="font-inter" for="weekday-sun">D</label>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <input type="checkbox" id="todos" class="custom-check" />
+                            <label for="todos" class="text-dark-100 font-lato ms-2">Todos los días</label>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 border-t-0.5">
+                        <div class="">
+                            <h6 class="font-inter fw-bold text-black mb-12px">Días de la semana</h6>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Panoramas" class="custom-check" />
+                                <label for="Panoramas" class="text-dark-100 font-lato ms-2">Panoramas</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Promociones" checked class="custom-check" />
+                                <label for="Promociones" class="text-dark-100 font-lato ms-2">Promociones</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Sabores" class="custom-check" />
+                                <label for="Sabores" class="text-dark-100 font-lato ms-2">Sabores</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Salud" class="custom-check" />
+                                <label for="Salud" class="text-dark-100 font-lato ms-2">Salud y Belleza</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Servicios" class="custom-check" />
+                                <label for="Servicios" class="text-dark-100 font-lato ms-2">Servicios</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Shopping" class="custom-check" />
+                                <label for="Shopping" class="text-dark-100 font-lato ms-2">Shopping</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Viajes" class="custom-check" />
+                                <label for="Viajes" class="text-dark-100 font-lato ms-2">Viajes</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Destacados" class="custom-check" />
+                                <label for="Destacados" class="text-dark-100 font-lato ms-2">Destacados</label>
+                            </div>
+                        </div>
+                        <div class="">
+                            <h6 class="font-inter fw-bold text-black mb-12px">Mis convenios</h6>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Banco" class="custom-check" />
+                                <label for="Banco" class="text-dark-100 font-lato ms-2">Banco de Chile</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="BCI" checked class="custom-check" />
+                                <label for="BCI" class="text-dark-100 font-lato ms-2">Banco BCI</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Santander" class="custom-check" />
+                                <label for="Santander" class="text-dark-100 font-lato ms-2">Banco Santander</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t-0.5">
+                        <div class="">
+                            <h6 class="font-inter fw-bold text-black mb-12px">Locales</h6>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Valle" class="custom-check" />
+                                <label for="Valle" class="text-dark-100 font-lato ms-2">Valle Nevado</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <input type="checkbox" id="Rappi" checked class="custom-check" />
+                                <label for="Rappi" class="text-dark-100 font-lato ms-2">Rappi</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+            <main class="w-100 pt-5">
+                <div class="mx-auto ms-xxl-5 max-w-xl-930px max-w-700px px-0">
 
                     <div class="px-2 px-sm-3 pt-5">
                         <!-- Breadcumb Start -->
@@ -159,7 +271,7 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item active  font-latto" aria-current="page">Destacadossss
+                                <li class="breadcrumb-item active  font-lato" aria-current="page">Destacadossss
                                 </li>
                             </ol>
                         </nav>
@@ -236,7 +348,7 @@
                         <!-- Cards -->
                         <div
                             class="d-flex flex-wrap justify-content-center vista-row vista-activ mb-5 px-2 px-sm-3 -mx-2">
-                            <div class="p-1 p-sm-2 vista-col">
+                            <div class="p-1 p-lg-12px vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -297,7 +409,7 @@
                                     </div>
                                     <div class="border-top p-0 bg-white border-gray-300">
                                         <div class="card-week">
-                                            <p class="card-week-title text-dark-100 font-latto mb-1">Válido hasta:
+                                            <p class="card-week-title text-dark-100 font-lato mb-1">Válido hasta:
                                                 31/12/21
                                             </p>
                                             <div class="d-flex">
@@ -326,14 +438,14 @@
                                         </div>
                                         <div class="card-footer bg-gray-300 border-0">
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <p class="footer-text mb-0 font-latto">Banco de Chile</p>
+                                                <p class="footer-text mb-0 font-lato">Banco de Chile</p>
                                                 <img src="./assets/images/Banco de Chile.png" alt="" class="footer-img">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-1 p-sm-2 vista-col">
+                            <div class="p-1 p-lg-12px vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -394,7 +506,7 @@
                                     </div>
                                     <div class="border-top p-0 bg-white border-gray-300">
                                         <div class="card-week">
-                                            <p class="card-week-title text-dark-100 font-latto mb-1">Válido hasta:
+                                            <p class="card-week-title text-dark-100 font-lato mb-1">Válido hasta:
                                                 31/12/21
                                             </p>
                                             <div class="d-flex">
@@ -423,14 +535,14 @@
                                         </div>
                                         <div class="card-footer bg-gray-300 border-0">
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <p class="footer-text mb-0 font-latto">Banco de Chile</p>
+                                                <p class="footer-text mb-0 font-lato">Banco de Chile</p>
                                                 <img src="./assets/images/Banco de Chile.png" alt="" class="footer-img">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-1 p-sm-2 vista-col">
+                            <div class="p-1 p-lg-12px vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -491,7 +603,7 @@
                                     </div>
                                     <div class="border-top p-0 bg-white border-gray-300">
                                         <div class="card-week">
-                                            <p class="card-week-title text-dark-100 font-latto mb-1">Válido hasta:
+                                            <p class="card-week-title text-dark-100 font-lato mb-1">Válido hasta:
                                                 31/12/21
                                             </p>
                                             <div class="d-flex">
@@ -520,14 +632,14 @@
                                         </div>
                                         <div class="card-footer bg-gray-300 border-0">
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <p class="footer-text mb-0 font-latto">Banco de Chile</p>
+                                                <p class="footer-text mb-0 font-lato">Banco de Chile</p>
                                                 <img src="./assets/images/Banco de Chile.png" alt="" class="footer-img">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-1 p-sm-2 vista-col">
+                            <div class="p-1 p-lg-12px vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -588,7 +700,7 @@
                                     </div>
                                     <div class="border-top p-0 bg-white border-gray-300">
                                         <div class="card-week">
-                                            <p class="card-week-title text-dark-100 font-latto mb-1">Válido hasta:
+                                            <p class="card-week-title text-dark-100 font-lato mb-1">Válido hasta:
                                                 31/12/21
                                             </p>
                                             <div class="d-flex">
@@ -617,14 +729,14 @@
                                         </div>
                                         <div class="card-footer bg-gray-300 border-0">
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <p class="footer-text mb-0 font-latto">Banco de Chile</p>
+                                                <p class="footer-text mb-0 font-lato">Banco de Chile</p>
                                                 <img src="./assets/images/Banco de Chile.png" alt="" class="footer-img">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-1 p-sm-2 vista-col">
+                            <div class="p-1 p-lg-12px vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -685,7 +797,7 @@
                                     </div>
                                     <div class="border-top p-0 bg-white border-gray-300">
                                         <div class="card-week">
-                                            <p class="card-week-title text-dark-100 font-latto mb-1">Válido hasta:
+                                            <p class="card-week-title text-dark-100 font-lato mb-1">Válido hasta:
                                                 31/12/21
                                             </p>
                                             <div class="d-flex">
@@ -714,14 +826,14 @@
                                         </div>
                                         <div class="card-footer bg-gray-300 border-0">
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <p class="footer-text mb-0 font-latto">Banco de Chile</p>
+                                                <p class="footer-text mb-0 font-lato">Banco de Chile</p>
                                                 <img src="./assets/images/Banco de Chile.png" alt="" class="footer-img">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-1 p-sm-2 vista-col">
+                            <div class="p-1 p-lg-12px vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
@@ -782,7 +894,7 @@
                                     </div>
                                     <div class="border-top p-0 bg-white border-gray-300">
                                         <div class="card-week">
-                                            <p class="card-week-title text-dark-100 font-latto mb-1">Válido hasta:
+                                            <p class="card-week-title text-dark-100 font-lato mb-1">Válido hasta:
                                                 31/12/21
                                             </p>
                                             <div class="d-flex">
@@ -811,7 +923,7 @@
                                         </div>
                                         <div class="card-footer bg-gray-300 border-0">
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <p class="footer-text mb-0 font-latto">Banco de Chile</p>
+                                                <p class="footer-text mb-0 font-lato">Banco de Chile</p>
                                                 <img src="./assets/images/Banco de Chile.png" alt="" class="footer-img">
                                             </div>
                                         </div>
@@ -823,9 +935,76 @@
                     <!-- Product Card End -->
                 </div>
             </main>
+
         </div>
     </div>
 
+    <footer>
+        <div class="bg-gray-900 w-100 py-4 py-lg-5">
+            <div class="container max-w-1440px py-2">
+                <div class="d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center py-3">
+                    <div class="col-lg-3 mb-4 mb-lg-0">
+                        <svg width="182" height="33" viewBox="0 0 182 33" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M44.014 15.42c-1.804-.627-3.764-.353-5.45.392-1.411.627-2.47 1.607-3.529 2.705-.901.98-1.568 2.196-2.195 3.372-2.862 5.724-10.468 7.527-16.349 7.018-2.98-.236-5.88-1.255-8.311-3.058-1.921-1.451-3.568-3.607-4.313-5.724-.274-.824-.431-1.726-.51-2.588v-.196c0-.157 0-.353-.039-.51v-1.176c0-.353.04-.745.079-1.098.039-.196.039-.392.078-.588 0-.117.04-.196.04-.313v-.079c.195-.823.391-1.607.705-2.391.078-.157.118-.314.196-.432 0 0 .196-.392.235-.43.236-.393.47-.824.706-1.177.118-.157.235-.314.353-.51.078-.117.157-.196.235-.313.353-.392.706-.745 1.098-1.098l.588-.47c.078-.079.157-.118.235-.197.04-.039.04-.039.079-.039h.039c.47-.313.94-.588 1.45-.862 1.137-.588 2-.863 3.215-1.176 3.294-.785 7.018-.941 10.311-.196 3.49.784 6.39 2.822 8.508 5.841.51.745 1.686.745 2.313.157.706-.667.666-1.647.157-2.392-2.157-3.058-5.215-5.41-8.743-6.508C21.666.287 17.745.247 14.1.757 9.2 1.424 4.298 3.854 1.868 8.52.143 11.813-.406 15.812.299 19.497c1.294 6.548 7.214 11.095 13.252 12.35 6.194 1.294 13.918 0 18.936-4.47.118.353.275.706.51 1.06.94 1.607 2.352 2.665 4.156 2.979 1.842.353 3.724-.118 5.41-.902 2.98-1.372 5.489-4.077 5.88-7.527.354-3.058-1.41-6.47-4.43-7.567ZM5.984 8.402c-.157.235-.039.079 0 0Zm-2.43 5.332c-.04.196-.04.157 0 0Zm41.636 8.86c0 .157-.04.314-.04.47 0 0 0 .119-.039.158a4.481 4.481 0 0 1-.549 1.45 7.088 7.088 0 0 1-2.117 2.196c-2.548 1.725-4.508 1.49-4.9 1.333-2.431-.941-2.196-3.333-2.157-3.685.04-.275.314-1.216.432-1.49.313-.706 1.685-4.509 5.998-4.587.941 0 1.725.353 2.274.98.627.706.94 1.45 1.059 2.509v.157a.78.78 0 0 1 .039.51Zm135.768 5.881c-.431-.862-1.372-1.097-2.195-.745-2.784 1.177-6.783 1.569-9.174-.784-1.255-1.215-1.961-2.783-3.607-3.489-1.686-.745-3.568-.274-5.175.392-3.294 1.412-5.96 4.391-9.488 5.175-.588.118-1.255.196-1.725.04-1.647-.628-1.686-3.53-1.686-3.96 0-.392.039-.784.039-1.177.196-2.077.98-4.077 1.843-5.92.392-.823-.275-1.881-1.019-2.156-.941-.314-1.686.235-2.078 1.059-.079.196-.196.392-.275.627-.353-.431-.745-.823-1.215-1.137-1.451-.98-3.372-1.137-5.018-.627-1.451.431-2.627 1.254-3.803 2.234-2.431 2.04-4.195 5.293-3.803 8.626-.392.235-.784.47-1.216.666-.274.157-1.215.667-1.999.706-.118 0-1.137.117-1.137-1.333 0-.431 0-.863.078-1.333.039-.392.118-.823.157-1.059.392-1.842.902-3.646 1.333-5.45.314-1.371-.157-3.018-1.686-2.704-3.293.705-6.586.94-9.958.666-1.137-.078-1.803.98-1.686 2.039.157 1.686.118 3.371-.353 4.822-.431 1.294-.98 2.117-2.077 3.019-.667.549-2.51 1.568-3.529 1.882 1.999-1.921 2.431-3.803 2.705-5.685.823-5.646-2.823-9.998-8.115-8.312-.902.275-1.725.745-2.509 1.294a607.429 607.429 0 0 1 2.195-10.036c.431-1.922-2.627-2.784-3.097-.824 0 0-3.215 14.86-4.587 21.563-1.569 1.333-4.274 2.039-6.234 1.569a4.693 4.693 0 0 1-1.294-.51c1.177-.98 2.235-2.196 3.098-3.49 1.136-1.685 1.881-3.763 1.568-5.88-.47-3.058-3.607-4.43-6.234-3.529-3.528 1.176-4.979 4.9-4.665 8.508a9.723 9.723 0 0 0 1.058 3.528c-2.548.941-5.45.824-7.566-.901-.941-.785-1.647-1.843-2.157-3.02.98-.47 1.921-1.097 2.666-1.881 2.078-2.235 6.626-7.645 6.979-15.29.078-1.53-.51-3.294-1.725-4.234-.98-.745-2.353-.863-3.529-.55-4.979 1.412-7.645 6.9-8.507 11.801-.432 2.47-.588 5.254-.04 7.842-2.038.039-5.645-.706-5.88-1.098-1.294-2.627-2.627-3.646-4.078-4.078-1.842-.548-3.646-.274-5.37.51-1.412.627-2.589 1.53-3.608 2.627-2.548 2.784-4.116 7.096-1.568 10.625.588.823 1.411 1.529 2.313 1.92 2.235 1.02 4.705.51 6.783-.47 2.98-1.372 5.488-4.077 5.88-7.527v-.196c2.078.784 4.235 1.176 6.509.94.51 1.216 1.176 2.392 2 3.372 3.175 3.882 8.742 4.352 13.015 2.313.196.197.431.353.628.51 2.156 1.568 5.135 1.96 7.684 1.294 1.294-.353 2.47-.941 3.49-1.804 1.371 1.922 3.292 2.745 5.292 2.706h.039s1.294.039 1.764.039c3.882 0 7.724-.628 10.86-3.254 2.627-2.196 3.489-5.528 3.489-8.86 2.118.039 4.235-.08 6.352-.353-.353 1.45-.745 2.861-.98 4.351a11.321 11.321 0 0 0-.118 3.254c.118 1.137.431 2.51 1.294 3.254 1.058.902 2.823.785 4.077.51 1.176-.274 2.235-.745 3.293-1.372.079-.04.157-.04.196.04.432.548.941 1.018 1.569 1.332 1.607.863 3.45.863 5.136.353 1.764-.51 3.41-1.45 4.665-2.784.627 1.53 1.647 2.902 3.215 3.45 3.881 1.333 7.802-1.803 10.899-3.803 1.372-.862 3.058-2.077 4.705-1.999.627.04 1.097.353 1.529.902.666.784 1.176 1.568 1.96 2.274 3.489 3.136 8.586 2.862 12.624 1.137.863-.196 1.137-1.373.784-2.157ZM61.342 24.712c-.51 1.058-1.333 1.881-2.156 2.47-1.059.744-2.195 1.333-3.724 1.41-3.294.158-3.568-2.783-3.607-2.94a4.766 4.766 0 0 1 0-1.058c.117-1.215.823-2.588 1.764-3.607.588-.627 1.215-1.215 1.843-1.647.94-.627 2.077-1.019 3.058-1.019.98 0 1.842.353 2.47.902 1.136.98 1.058 2.823 1.058 2.862.04.706-.274 1.764-.706 2.627Zm12.39-5.136c-.197-1.177-.314-2.353-.314-3.411 0-3.96 1.685-8.43 4.508-11.213 1.608-1.607 3.45-1.098 2.862 2.039-1.293 6.625-3.607 9.095-4.43 10.193-.94 1.215-1.372 1.53-2.627 2.392Zm13.564 5.606c-.078-.157-.157-.314-.235-.51-.314-.745-.51-1.646-.47-2.352.078-1.215.392-2.784 1.686-3.999 1.293-1.02 2.822-.47 2.861.784v.353c0 .157-.039.275-.039.431 0 .04-.039.157-.078.314a7.744 7.744 0 0 1-.314 1.02c-.784 1.49-2.117 2.9-3.41 3.959Zm22.896-2.195c-.431 4.469-7.566 9.487-9.919 3.96a1.93 1.93 0 0 0 .079-.471c.235-1.137.47-2.392.745-3.646a7.239 7.239 0 0 1 1.137-2.353c1.058-1.45 2.94-3.293 4.861-3.215 2.745.079 3.333 3.529 3.097 5.724Zm33.168 3.254c-.627.94-1.529 1.49-2.627 1.92-1.96.706-3.332.314-3.881-.117-1.882-1.49-.98-3.803-.706-4.509 0 0 .784-1.725 2.314-3.097.666-.588 1.215-.98 1.999-1.333.706-.313 1.372-.47 1.999-.392 1.843.235 2.314 2.196 2.274 2.666.079 1.45-.156 3.058-1.372 4.862Z"
+                                fill="#fff" />
+                        </svg>
+                    </div>
+
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
+                        <ul class="nav nav-menu justify-content-center">
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link px-2 px-lg-3 font-weight-medium text-white font-inter">Términos y
+                                    condiciones</a></li>
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link px-2 px-lg-3 font-weight-medium text-white font-inter">Privacidad</a>
+                            </li>
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link px-2 px-lg-3 font-weight-medium text-white font-inter">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="nav col-lg-3 justify-content-center justify-content-lg-end">
+                        <li class="nav-item"><a href="#" class="nav-link px-3"><svg width="18" height="17"
+                                    viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.09545 2.18054C4.09545 3.15445 3.33023 3.91967 2.35632 3.91967C1.3824 3.91967 0.617188 3.15445 0.617188 2.18054C0.617188 1.20662 1.3824 0.441406 2.35632 0.441406C3.33023 0.441406 4.09545 1.20662 4.09545 2.18054ZM4.09545 5.31097H0.617188V16.4414H4.09545V5.31097ZM9.66066 5.31097H6.1824V16.4414H9.66066V10.5979C9.66066 7.32836 13.8346 7.0501 13.8346 10.5979V16.4414H17.3128V9.41532C17.3128 3.91967 11.1215 4.12836 9.66066 6.84141V5.31097Z"
+                                        fill="white" />
+                                </svg>
+                            </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-3"><svg width="17" height="17"
+                                    viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.3125 1.90807C10.4458 1.90807 10.7125 1.90807 11.5792 1.97474C13.7792 2.04141 14.7792 3.10807 14.8458 5.24141C14.9125 6.10807 14.9125 6.30807 14.9125 8.44141C14.9125 10.5747 14.9125 10.8414 14.8458 11.6414C14.7792 13.7747 13.7125 14.8414 11.5792 14.9081C10.7125 14.9747 10.5125 14.9747 8.3125 14.9747C6.17917 14.9747 5.9125 14.9747 5.1125 14.9081C2.9125 14.8414 1.9125 13.7747 1.84583 11.6414C1.77917 10.7747 1.77917 10.5747 1.77917 8.44141C1.77917 6.30807 1.77917 6.04141 1.84583 5.24141C1.9125 3.10807 2.97917 2.04141 5.1125 1.97474C5.9125 1.90807 6.17917 1.90807 8.3125 1.90807ZM8.3125 0.441406C6.1125 0.441406 5.84583 0.441406 5.04583 0.508073C2.1125 0.641406 0.5125 2.24141 0.379167 5.17474C0.3125 5.97474 0.3125 6.24141 0.3125 8.44141C0.3125 10.6414 0.3125 10.9081 0.379167 11.7081C0.5125 14.6414 2.1125 16.2414 5.04583 16.3747C5.84583 16.4414 6.1125 16.4414 8.3125 16.4414C10.5125 16.4414 10.7792 16.4414 11.5792 16.3747C14.5125 16.2414 16.1125 14.6414 16.2458 11.7081C16.3125 10.9081 16.3125 10.6414 16.3125 8.44141C16.3125 6.24141 16.3125 5.97474 16.2458 5.17474C16.1125 2.24141 14.5125 0.641406 11.5792 0.508073C10.7792 0.441406 10.5125 0.441406 8.3125 0.441406ZM8.3125 4.30807C6.04583 4.30807 4.17917 6.17474 4.17917 8.44141C4.17917 10.7081 6.04583 12.5747 8.3125 12.5747C10.5792 12.5747 12.4458 10.7081 12.4458 8.44141C12.4458 6.17474 10.5792 4.30807 8.3125 4.30807ZM8.3125 11.1081C6.84583 11.1081 5.64583 9.90807 5.64583 8.44141C5.64583 6.97474 6.84583 5.77474 8.3125 5.77474C9.77917 5.77474 10.9792 6.97474 10.9792 8.44141C10.9792 9.90807 9.77917 11.1081 8.3125 11.1081ZM12.5792 3.24141C12.0458 3.24141 11.6458 3.64141 11.6458 4.17474C11.6458 4.70807 12.0458 5.10807 12.5792 5.10807C13.1125 5.10807 13.5125 4.70807 13.5125 4.17474C13.5125 3.64141 13.1125 3.24141 12.5792 3.24141Z"
+                                        fill="white" />
+                                </svg>
+                            </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-3"><svg width="20" height="17"
+                                    viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.50386 16.4414C13.9332 16.4414 17.9961 10.2863 17.9961 4.94918C17.9961 4.77431 17.9925 4.60033 17.9844 4.42702C18.7731 3.85694 19.4587 3.14535 19.9994 2.33569C19.2757 2.65723 18.497 2.87375 17.6799 2.97138C18.5138 2.47138 19.1542 1.68008 19.4562 0.736969C18.6757 1.19979 17.8114 1.53611 16.8915 1.71747C16.1542 0.932443 15.1045 0.441406 13.9431 0.441406C11.7123 0.441406 9.90328 2.25038 9.90328 4.48009C9.90328 4.79714 9.93888 5.10525 10.0078 5.40103C6.65119 5.23243 3.67452 3.62497 1.68261 1.18121C1.33533 1.77793 1.13537 2.47161 1.13537 3.21118C1.13537 4.61242 1.84853 5.84953 2.93293 6.57343C2.27038 6.55305 1.6479 6.37079 1.10358 6.06806C1.10268 6.08486 1.10268 6.10187 1.10268 6.11956C1.10268 8.07587 2.49518 9.70908 4.34312 10.0792C4.0039 10.1717 3.64698 10.2214 3.27842 10.2214C3.01824 10.2214 2.76522 10.1954 2.51914 10.1486C3.03324 11.7532 4.52449 12.9211 6.29249 12.954C4.90984 14.0375 3.16826 14.683 1.27599 14.683C0.950198 14.683 0.628662 14.6644 0.3125 14.6271C2.09998 15.7726 4.22243 16.4414 6.50386 16.4414Z"
+                                        fill="white" />
+                                </svg>
+                            </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-3"><svg width="8" height="17"
+                                    viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 5.77474H0V8.44141H2V16.4414H5.33333V8.44141H7.73333L8 5.77474H5.33333V4.64141C5.33333 4.04141 5.46667 3.77474 6.06667 3.77474H8V0.441406H5.46667C3.06667 0.441406 2 1.50807 2 3.50807V5.77474Z"
+                                        fill="white" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark-200 py-12px">
+            <div class="container max-w-1440px">
+                <p class="text-white opacity-50 mb-0 text-end">Copyright © 2020. LogoIpsum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
         integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
         crossorigin="anonymous"></script>
