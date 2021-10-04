@@ -672,3 +672,23 @@ footer .nav-menu {
         font-size: 16px;
     }
 }
+
+/* ============= Feedback ============= */
+
+.feedback {
+    padding: 82px 18px;
+    width: 60px;
+    height: 250px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: fixed;
+    z-index: 10;
+    right: 0 !important;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    background: #F8F9FA;
+    border: 1px solid #DEE2E6;
+    box-shadow: 5px 16px 48px rgba(0, 0, 0, 0.08);
+    border-radius: 8px 0px 0px 8px;
+}
