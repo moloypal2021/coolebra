@@ -204,8 +204,8 @@
                                     <label class="font-inter" for="weekday-sun">D</label>
                                 </div>
                                 <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="todos" class="custom-check" />
-                                    <label for="todos" class="text-dark-100 font-lato ms-2">Todos los días</label>
+                                    <input type="checkbox" id="checkAll" class="custom-check" />
+                                    <label for="checkAll" class="text-dark-100 font-lato ms-2">Todos los días</label>
                                 </div>
                             </div>
                         </div>
@@ -1092,6 +1092,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
+        // Week All Checker
+        $("#checkAll").click(function () {
+            $(".weekday").prop('checked', $(this).prop('checked'));
+        });
 
 
         // When your page loads
