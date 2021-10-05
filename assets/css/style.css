@@ -740,7 +740,7 @@
     z-index: -3;
     top: 0px;
     bottom: 0px;
-    left: 0px;
+    left: -1px;
     right: 0px;
     width: 37px;
     min-width: 37px;
@@ -763,7 +763,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    transform: translate(2px, 2px);
+    transform: translate(1.2px, 2px);
     width: 33px;
     min-width: 33px;
     max-width: 33px;
