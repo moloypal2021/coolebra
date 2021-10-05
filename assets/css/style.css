@@ -14,7 +14,7 @@
     font-family: 'AnthologY';
     font-style: normal;
     font-weight: 400;
-    src: local('AnthologY'), url('../font/anthology-regular-demo.ttf') format('ttf');
+    src: local('AnthologY'), url('../font/Anthology-Sans.otf') format('otf');
 }
 
 /*======= Import Font End ======= */
@@ -143,8 +143,16 @@
     border-color: #F50FA5;
 }
 
+.focus\:border-red:focus {
+    border-color: #F50FA5;
+}
+
 .hover\:border-gray:hover {
     border-color: #6C757D;
+}
+
+.border-gray {
+    border: 1px solid#6C757D !important;
 }
 
 /* ============ Border ============== */
@@ -337,22 +345,22 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(45.05deg, #3358DE 5.97%, #682296 50%, #F50FA5 94.03%);
-    opacity: 0.5;
-    z-index: 1032;
+    background: #343A40 !important;
+    opacity: 0.8;
+    z-index: 1033;
     display: none;
 }
 
 .search-black-screen2 {
-    background: #6C757D !important;
+    background: linear-gradient(45.05deg, #3358DE 5.97%, #682296 50%, #F50FA5 94.03%);
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 1032;
-    opacity: 0.6;
+    z-index: 1031;
+    opacity: 0.3;
 }
 
 /* ==== Breadcumb ====== */
@@ -401,11 +409,10 @@
 .product-card {
     width: 280px;
     filter: drop-shadow(0px 8px 16px rgba(155, 134, 165, 0.25));
-    transition: all 0.5s;
 }
 
 .product-card:hover {
-    transform: scale(1.001);
+    transition: 0.5s ease-in-out;
     filter: drop-shadow(0px 8px 16px rgba(155, 134, 165, 0.75)) !important;
 }
 
@@ -620,14 +627,15 @@
 /* Firefox */
 
 .filter-area {
-    scrollbar-width: auto;
+    scrollbar-width: 4px;
     scrollbar-color: #DEE2E6 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
 
 .filter-area::-webkit-scrollbar {
-    width: 4px;
+    width: 10px;
+    border-radius: 2px;
 }
 
 .filter-area::-webkit-scrollbar-track {
@@ -637,6 +645,7 @@
 .filter-area::-webkit-scrollbar-thumb {
     background-color: #DEE2E6;
     border-radius: 2px;
+    border: 3px solid #ffffff;
 }
 
 .mobile-order-btn::after {
@@ -648,17 +657,17 @@
     width: 10px;
     height: 10px;
     background: transparent;
-    border-top: 2px solid #682296;
-    border-left: 2px solid #682296;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
     transition: all 250ms ease-in-out;
     background-image: none;
     transform: rotate( -135deg);
 }
 
-.accordion-button:hover::after {
+/* .accordion-button:hover::after {
     border-top: 2px solid #F50FA5;
     border-left: 2px solid #F50FA5;
-}
+} */
 
 .accordion-button:not(.collapsed)::after {
     content: '';
@@ -675,6 +684,12 @@
 .accordion-button:not(.collapsed):hover::after {
     border-top: 2px solid #F50FA5;
     border-left: 2px solid #F50FA5;
+}
+
+.aplicar-button {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
 }
 
 /* Week Checkbox */
@@ -704,26 +719,22 @@
     z-index: 1;
 }
 
-.weekDays-selector .weekday+label:hover {
-    color: #fff;
-    background: #682296;
+@media (min-width: 991px) {
+    .weekDays-selector .weekday+label:hover {
+        border-color: #682296;
+    }
 }
 
 .weekDays-selector .weekday:checked+label {
     color: #212529;
     border: 1px solid rgba(0, 0, 0, 0.0);
-    padding-left: 2px;
+    /* padding-left: 2px; */
 }
 
 .weekDays-selector .weekday:checked+label:hover {
     color: #212529;
     background: #ffffff;
 }
-
-/* .weekDays-selector .weekday:checked+label::after {
-    background: #fff;
-    position: relative;
-} */
 
 .weekDays-selector .weekday:checked+label::before {
     z-index: -3;
@@ -768,24 +779,67 @@
 }
 
 .custom-check {
+    /* width: 20px;
+    height: 20px;
+    border: 1px solid #CED4DA;
+    border-radius: 6px !important; */
+    /* appearance: none; */
+    position: absolute;
+    opacity: 0;
+}
+
+.custom-check+label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+.custom-check+label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
     width: 20px;
     height: 20px;
     border: 1px solid #CED4DA;
-    border-radius: 6px !important;
-    appearance: none;
+    border-radius: 6px !important
 }
 
-.custom-check:checked {
+.custom-check+label:hover:before {
+    border-color: #682296;
+}
+
+.custom-check:checked+label:before {
     background-color: #682296;
-    background-image: linear-gradient(45deg, #3358DE 0%, #682296 50%, #F50FA5 100%);
-    background-image: -webkit-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%);
-    background-image: -moz-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%);
-    background-image: -o-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%);
+    background-image: linear-gradient(45deg, #3358DE 0%, #682296 50%, #F50FA5 100%) !important;
+    background-image: -webkit-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%) !important;
+    background-image: -moz-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%) !important;
+    background-image: -o-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%) !important;
+}
+
+.custom-check:checked+label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 11px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
+/* .custom-check:checked {
+    background-color: #682296;
+    background-image: linear-gradient(45deg, #3358DE 0%, #682296 50%, #F50FA5 100%) !important;
+    background-image: -webkit-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%) !important;
+    background-image: -moz-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%) !important;
+    background-image: -o-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%) !important;
     position: relative;
 }
 
 .custom-check:checked::after {
-    content: " ";
+    content: "";
     display: block;
     width: 0.3em;
     height: 0.6em;
@@ -799,7 +853,7 @@
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-}
+} */
 
 /* Footer */
 
