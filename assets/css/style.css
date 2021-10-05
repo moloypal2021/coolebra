@@ -211,14 +211,26 @@
     max-width: 100%;
 }
 
-@media (min-width: 1200px) {
-    .max-w-xl-930px {
+@media (min-width: 991px) {
+    .card-container {
+        max-width: 630px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .card-container {
         max-width: 930px;
     }
 }
 
-.max-w-1440px {
-    max-width: 1440px;
+@media (min-width: 1617px) {
+    .card-container {
+        max-width: 1230px;
+    }
+}
+
+.max-w-1700px {
+    max-width: 1700px;
 }
 
 /* ============== Margin ================ */
@@ -607,8 +619,8 @@
     min-width: 37px;
     max-width: 37px;
     margin-right: 6px;
-    /* padding-left: 2px; */
-    line-height: 31px;
+    padding-left: 2px;
+    line-height: 32px;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
