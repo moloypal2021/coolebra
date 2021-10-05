@@ -21,9 +21,9 @@
 
             <div class="d-flex ms-auto">
                 <div class="input-group flex-nowrap searchbar" id="search-input">
-                    <input type="text" class="form-control bg-white border-0 shadow-none"
+                    <input type="text" class="form-control hover:border-gray bg-white border-0 d-lg-block shadow-none"
                         placeholder="¿Qué estás buscando hoy?">
-                    <button class="input-group-text bg-white border-0 p-2" id="search-icon">
+                    <button class="input-group-text bg-transparent border-0 p-2" id="search-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd">
                                 <path
@@ -52,6 +52,9 @@
                             </defs>
                         </svg>
                     </button>
+                </div>
+                <div class="search-black-screen">
+                    <div class="search-black-screen2"></div>
                 </div>
             </div>
             <button class="navbar-toggler border-0 shadow-none ps-0 pe-1" type="button" data-bs-toggle="collapse"
@@ -147,7 +150,7 @@
                 <div class="px-3 pt-4 filter-area accordion" id="accordionPanelsStayOpenExample">
                     <div class="pb-1">
                         <h4 class="font-inter fw-bold text-black mb-12px">Filtro</h4>
-                        <input type="text" class="form-control font-lato px-4 py-12px text-dark-100"
+                        <input type="text" class="form-control hover:border-red font-lato px-4 py-12px text-dark-100"
                             style="width: 280px;" placeholder="Filtrar por palabras">
                     </div>
 
@@ -164,7 +167,8 @@
                             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                                 aria-labelledby="panelsStayOpen-headingOne">
                                 <div class="d-flex align-items-center mb-4 pb-1">
-                                    <input type="text" class="form-control font-inter text-gray-600 w-96px"
+                                    <input type="text"
+                                        class="form-control hover:border-red font-inter text-gray-600 w-96px"
                                         placeholder="20%" value="20%">
                                     <svg class="mx-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -172,7 +176,8 @@
                                             d="M4.64689 1.77971C4.69334 1.73314 4.74851 1.6962 4.80926 1.67099C4.87001 1.64579 4.93513 1.63281 5.00089 1.63281C5.06666 1.63281 5.13178 1.64579 5.19253 1.67099C5.25327 1.6962 5.30845 1.73314 5.35489 1.77971L11.3549 7.77971C11.4015 7.82615 11.4384 7.88133 11.4636 7.94207C11.4888 8.00282 11.5018 8.06794 11.5018 8.13371C11.5018 8.19947 11.4888 8.26459 11.4636 8.32534C11.4384 8.38608 11.4015 8.44126 11.3549 8.48771L5.35489 14.4877C5.26101 14.5816 5.13367 14.6343 5.00089 14.6343C4.86812 14.6343 4.74078 14.5816 4.64689 14.4877C4.55301 14.3938 4.50026 14.2665 4.50026 14.1337C4.50026 14.0009 4.55301 13.8736 4.64689 13.7797L10.2939 8.13371L4.64689 2.48771C4.60033 2.44126 4.56339 2.38609 4.53818 2.32534C4.51297 2.26459 4.5 2.19947 4.5 2.13371C4.5 2.06794 4.51297 2.00282 4.53818 1.94207C4.56339 1.88133 4.60033 1.82615 4.64689 1.77971Z"
                                             fill="#67748E" />
                                     </svg>
-                                    <input type="text" class="form-control font-inter text-gray-600 w-96px"
+                                    <input type="text"
+                                        class="form-control hover:border-red font-inter text-gray-600 w-96px"
                                         placeholder="100%" value="100%">
                                 </div>
                             </div>
@@ -473,7 +478,7 @@
                             class="d-flex flex-wrap justify-content-center justify-content-sm-start vista-row vista-active mb-5 px-1">
                             <div class="px-1 py-2 p-sm-2 p-lg-12px vista-col">
                                 <div
-                                    class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
+                                    class="card product-card mobile-width mx-auto rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
                                         <img src="./assets/images/img-1.jpg"
                                             class="card-img-top object-cover object-center product-img" alt="img-1">
@@ -570,7 +575,7 @@
                             </div>
                             <div class="px-1 py-2 p-sm-2 p-lg-12px vista-col">
                                 <div
-                                    class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
+                                    class="card product-card mobile-width mx-auto rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
                                         <img src="./assets/images/img-2.jpg"
                                             class="card-img-top object-cover object-center product-img" alt="img-1">
@@ -667,7 +672,7 @@
                             </div>
                             <div class="px-1 py-2 p-sm-2 p-lg-12px vista-col">
                                 <div
-                                    class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
+                                    class="card product-card mobile-width mx-auto rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
                                         <img src="./assets/images/img-3.jpg"
                                             class="card-img-top object-cover object-center product-img" alt="img-1">
@@ -764,7 +769,7 @@
                             </div>
                             <div class="px-1 py-2 p-sm-2 p-lg-12px vista-col">
                                 <div
-                                    class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
+                                    class="card product-card mobile-width mx-auto rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
                                         <img src="./assets/images/img-1.jpg"
                                             class="card-img-top object-cover object-center product-img" alt="img-1">
@@ -861,7 +866,7 @@
                             </div>
                             <div class="px-1 py-2 p-sm-2 p-lg-12px vista-col">
                                 <div
-                                    class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
+                                    class="card product-card mobile-width mx-auto rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
                                         <img src="./assets/images/img-2.jpg"
                                             class="card-img-top object-cover object-center product-img" alt="img-1">
@@ -958,7 +963,7 @@
                             </div>
                             <div class="px-1 py-2 p-sm-2 p-lg-12px vista-col">
                                 <div
-                                    class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
+                                    class="card product-card mobile-width mx-auto rounded-16px overflow-hidden shadow-10">
                                     <div class="position-relative">
                                         <img src="./assets/images/img-3.jpg"
                                             class="card-img-top object-cover object-center product-img" alt="img-1">
@@ -1153,6 +1158,8 @@
 
     <script>
 
+
+        // Navbar Toggle Filter Sticky Z-index change
         $('.navbar-toggler').click(function () {
             if ($(this).hasClass("collapsed")) {
                 $("#filterSticky").css("z-index", "1030");
@@ -1169,44 +1176,59 @@
         });
 
 
-        // When your page loads
+
+
+        // Filter Bar Toggle
+        $(".filter-button").click(function (e) {
+            e.preventDefault();
+            $("#filter-bar").toggle();
+        });
+
+
+        // SearchInput
         $(function () {
-            // When the toggle areas in your navbar are clicked, toggle them
+            var searchActive = false;
+            // Search Backscreen active
+            $("#search-input").click(function (e) {
+                if (searchActive = !searchActive) {
+                    $(".search-black-screen").css("display", "block");
+                    $("#filterSticky").css("z-index", "0");
+                }
+            });
+            $(".search-black-screen").click(function (e) {
+
+                searchActive = !searchActive
+                if (!searchActive) {
+                    $(".search-black-screen").css("display", "none");
+                    $("#filterSticky").css("z-index", "1030");
+                }
+
+                // Mobile Screen Size Search Input Toggle 
+                if ($(window).width() < 992) {
+                    e.preventDefault();
+                    $("#search-input input").toggle();
+                }
+            });
+
+            // Mobile Searh Input
             $("#search-icon").click(function (e) {
                 if ($(window).width() < 992) {
                     e.preventDefault();
                     $("#search-input input").toggle();
                 }
             });
-            $(".filter-button").click(function (e) {
-                e.preventDefault();
-                $("#filter-bar").toggle();
-            });
-
         })
 
-        // When your page loads
+        // Vista Card
         $(function () {
             var vista = true;
-            // When the toggle areas in your navbar are clicked, toggle them
             $("#vista").click(function (e) {
                 if (vista = !vista) {
                     $(".vista-row").removeClass("mx-auto").addClass("vista-active ");
-                    // $(".vista-col").removeClass("w-100");
-                    // $(".vista-col").removeClass("col-md-4 col-sm-6").addClass("col-md-3 col-sm-4 col-6");
-                    // $(".vista-col").children().removeClass("mx-auto mx-sm-0 mobile-width");
-
                 } else {
                     $(".vista-row").removeClass("vista-active").addClass("mx-auto");
-                    // $(".vista-col").addClass("w-100");
-                    // $(".vista-col").children().addClass("mx-auto ");
-                    // $(".vista-col").removeClass("col-md-3 col-sm-4 col-6").addClass("col-md-4 col-sm-6");
-                    // $(".vista-col").children().addClass("mx-auto mx-sm-0 mobile-width");
-
                 }
-
             });
-
         })
 
     </script>

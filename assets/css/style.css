@@ -139,6 +139,14 @@
     border-color: var(--gray-300) !important;
 }
 
+.hover\:border-red:hover {
+    border-color: #F50FA5;
+}
+
+.hover\:border-gray:hover {
+    border-color: #6C757D;
+}
+
 /* ============ Border ============== */
 
 .border-t-0\.5 {
@@ -281,6 +289,7 @@
 
 .searchbar {
     position: relative;
+    z-index: 1036;
 }
 
 .searchbar input {
@@ -311,12 +320,39 @@
         border: 0 !important;
         z-index: 9999;
     }
+    .searchbar button {
+        background: #fff !important;
+    }
 }
 
 @media (min-width: 1200px) {
     .searchbar {
         width: 360px !important;
     }
+}
+
+.search-black-screen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45.05deg, #3358DE 5.97%, #682296 50%, #F50FA5 94.03%);
+    opacity: 0.5;
+    z-index: 1032;
+    display: none;
+}
+
+.search-black-screen2 {
+    background: #6C757D !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1032;
+    opacity: 0.6;
 }
 
 /* ==== Breadcumb ====== */
@@ -364,6 +400,13 @@
 
 .product-card {
     width: 280px;
+    filter: drop-shadow(0px 8px 16px rgba(155, 134, 165, 0.25));
+    transition: all 0.5s;
+}
+
+.product-card:hover {
+    transform: scale(1.001);
+    filter: drop-shadow(0px 8px 16px rgba(155, 134, 165, 0.75)) !important;
 }
 
 .product-card .card-body {
@@ -600,6 +643,40 @@
     display: none;
 }
 
+.accordion-button::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-top: 2px solid #682296;
+    border-left: 2px solid #682296;
+    transition: all 250ms ease-in-out;
+    background-image: none;
+    transform: rotate( -135deg);
+}
+
+.accordion-button:hover::after {
+    border-top: 2px solid #F50FA5;
+    border-left: 2px solid #F50FA5;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-top: 2px solid #682296;
+    border-left: 2px solid #682296;
+    transition: all 250ms ease-in-out;
+    background-image: none;
+    transform: rotate( 45deg);
+}
+
+.accordion-button:not(.collapsed):hover::after {
+    border-top: 2px solid #F50FA5;
+    border-left: 2px solid #F50FA5;
+}
+
 /* Week Checkbox */
 
 .weekDays-selector input {
@@ -627,10 +704,20 @@
     z-index: 1;
 }
 
+.weekDays-selector .weekday+label:hover {
+    color: #fff;
+    background: #682296;
+}
+
 .weekDays-selector .weekday:checked+label {
     color: #212529;
     border: 1px solid rgba(0, 0, 0, 0.0);
     padding-left: 2px;
+}
+
+.weekDays-selector .weekday:checked+label:hover {
+    color: #212529;
+    background: #ffffff;
 }
 
 /* .weekDays-selector .weekday:checked+label::after {
