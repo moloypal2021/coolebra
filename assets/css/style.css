@@ -529,6 +529,11 @@
     box-shadow: 16px 8px 16px rgba(0, 0, 0, 0.08);
 }
 
+.filter-header {
+    position: relative;
+    z-index: 111;
+}
+
 @media (max-width: 991px) {
     .filterbar {
         left: 0;
@@ -536,7 +541,7 @@
         z-index: 999999;
     }
     .filter-area {
-        position: fixed;
+        position: fixed !important;
     }
 }
 
