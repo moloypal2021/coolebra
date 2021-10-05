@@ -607,8 +607,8 @@
     min-width: 37px;
     max-width: 37px;
     margin-right: 6px;
-    padding-left: 2px;
-    line-height: 32px;
+    /* padding-left: 2px; */
+    line-height: 31px;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
