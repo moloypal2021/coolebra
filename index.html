@@ -23,7 +23,7 @@
                 <div class="input-group flex-nowrap searchbar" id="search-input">
                     <input type="text" class="form-control bg-white border-0 shadow-none"
                         placeholder="¿Qué estás buscando hoy?">
-                    <button class="input-group-text bg-white border-0" id="search-icon">
+                    <button class="input-group-text bg-white border-0 p-2" id="search-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd">
                                 <path
@@ -54,7 +54,7 @@
                     </button>
                 </div>
             </div>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler border-0 shadow-none ps-0 pe-1" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,7 +161,7 @@
                             aria-labelledby="panelsStayOpen-headingOne">
                             <div class="d-flex align-items-center mb-4 pb-1">
                                 <input type="text" class="form-control font-inter text-gray-600 w-96px"
-                                    placeholder="%20" value="%20">
+                                    placeholder="20%" value="20%">
                                 <svg class="mx-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -190,11 +190,11 @@
                                 <div class="weekDays-selector mb-4">
                                     <input type="checkbox" id="weekday-mon" class="weekday" />
                                     <label class="font-inter" for="weekday-mon">L</label>
-                                    <input type="checkbox" id="weekday-tue" checked class="weekday" />
+                                    <input type="checkbox" id="weekday-tue" class="weekday" />
                                     <label class="font-inter" for="weekday-tue">M</label>
                                     <input type="checkbox" id="weekday-wed" class="weekday" />
                                     <label class="font-inter" for="weekday-wed">M</label>
-                                    <input type="checkbox" id="weekday-thu" checked class="weekday" />
+                                    <input type="checkbox" id="weekday-thu" class="weekday" />
                                     <label class="font-inter" for="weekday-thu">J</label>
                                     <input type="checkbox" id="weekday-fri" class="weekday" />
                                     <label class="font-inter" for="weekday-fri">V</label>
@@ -228,7 +228,7 @@
                                     <label for="Panoramas" class="text-dark-100 font-lato ms-2">Panoramas</label>
                                 </div>
                                 <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Promociones" checked class="custom-check" />
+                                    <input type="checkbox" id="Promociones" class="custom-check" />
                                     <label for="Promociones" class="text-dark-100 font-lato ms-2">Promociones</label>
                                 </div>
                                 <div class="d-flex align-items-center mb-3">
@@ -273,7 +273,7 @@
                                     <label for="Banco" class="text-dark-100 font-lato ms-2">Banco de Chile</label>
                                 </div>
                                 <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="BCI" checked class="custom-check" />
+                                    <input type="checkbox" id="BCI" class="custom-check" />
                                     <label for="BCI" class="text-dark-100 font-lato ms-2">Banco BCI</label>
                                 </div>
                                 <div class="d-flex align-items-center mb-3">
@@ -300,7 +300,7 @@
                                     <label for="Valle" class="text-dark-100 font-lato ms-2">Valle Nevado</label>
                                 </div>
                                 <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Rappi" checked class="custom-check" />
+                                    <input type="checkbox" id="Rappi" class="custom-check" />
                                     <label for="Rappi" class="text-dark-100 font-lato ms-2">Rappi</label>
                                 </div>
                             </div>
@@ -314,10 +314,10 @@
 
 
             <!-- Main Content Start -->
-            <main class="w-100 pt-5">
-                <div class="mx-auto ms-xxl-5 max-w-xl-930px max-w-700px px-0">
+            <main class="w-100 pt-4 pt-md-5">
+                <div class="mx-auto ms-xxl-5 max-w-xl-930px max-w-700px px-0 pt-2">
 
-                    <div class="px-2 px-sm-3 pt-5">
+                    <div class="px-4 px-sm-3 pt-5">
                         <!-- Breadcumb Start -->
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb align-items-center text-gray-600">
@@ -366,11 +366,11 @@
                     <!-- Active vista card to add vista-active class -->
                     <div class="position-relative">
                         <!-- Filter Sticky Bar -->
-                        <div class="bg-white py-2 px-2 px-sm-3 w-100 sticky-top top-55px mb-3 d-block d-lg-none"
+                        <div class="bg-white py-2 px-4 px-sm-3 w-100 sticky-top top-55px mb-3 d-block d-lg-none"
                             style="z-index: 1029;">
                             <div class="d-flex justify-content-between px-1">
                                 <div>
-                                    <button class="btn px-0 d-flex align-items-center filter-button">
+                                    <button class="btn p-0 d-flex align-items-center filter-button">
                                         <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -381,7 +381,7 @@
                                     </button>
                                 </div>
                                 <div>
-                                    <button class="btn px-0 shadow-none d-flex align-items-center" id="vista">
+                                    <button class="btn p-0 shadow-none d-flex align-items-center" id="vista">
                                         <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -392,7 +392,7 @@
                                     </button>
                                 </div>
                                 <div>
-                                    <button class="btn px-0 d-flex align-items-center">
+                                    <!-- <button class="btn px-0 d-flex align-items-center">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -407,12 +407,40 @@
                                         </svg>
 
                                         <span class="ms-2 text-sm text-dark-100">Ordenar</span>
-                                    </button>
+                                    </button> -->
+
+                                    <div class="navbar py-0">
+                                        <div class="btn-group">
+                                            <button type="button"
+                                                class="btn text-sm text-dark-100 dropdown-toggle mobile-order-btn d-flex align-items-center p-0 shadow-none"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M11 3.5C11.1326 3.5 11.2598 3.55268 11.3536 3.64645C11.4473 3.74021 11.5 3.86739 11.5 4V13C11.5 13.1326 11.4473 13.2598 11.3536 13.3536C11.2598 13.4473 11.1326 13.5 11 13.5C10.8674 13.5 10.7402 13.4473 10.6464 13.3536C10.5527 13.2598 10.5 13.1326 10.5 13V4C10.5 3.86739 10.5527 3.74021 10.6464 3.64645C10.7402 3.55268 10.8674 3.5 11 3.5Z"
+                                                        fill="black" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.6469 2.64689C10.6933 2.60033 10.7485 2.56339 10.8093 2.53818C10.87 2.51297 10.9351 2.5 11.0009 2.5C11.0667 2.5 11.1318 2.51297 11.1925 2.53818C11.2533 2.56339 11.3084 2.60033 11.3549 2.64689L14.3549 5.64689C14.4014 5.69338 14.4383 5.74857 14.4634 5.80931C14.4886 5.87005 14.5015 5.93515 14.5015 6.00089C14.5015 6.06664 14.4886 6.13174 14.4634 6.19248C14.4383 6.25322 14.4014 6.30841 14.3549 6.35489C14.3084 6.40138 14.2532 6.43826 14.1925 6.46342C14.1317 6.48858 14.0666 6.50153 14.0009 6.50153C13.9352 6.50153 13.8701 6.48858 13.8093 6.46342C13.7486 6.43826 13.6934 6.40138 13.6469 6.35489L11.0009 3.70789L8.35489 6.35489C8.30841 6.40138 8.25322 6.43826 8.19248 6.46342C8.13174 6.48858 8.06664 6.50153 8.00089 6.50153C7.93515 6.50153 7.87005 6.48858 7.80931 6.46342C7.74857 6.43826 7.69338 6.40138 7.64689 6.35489C7.60041 6.30841 7.56353 6.25322 7.53837 6.19248C7.51321 6.13174 7.50026 6.06664 7.50026 6.00089C7.50026 5.93515 7.51321 5.87005 7.53837 5.80931C7.56353 5.74857 7.60041 5.69338 7.64689 5.64689L10.6469 2.64689ZM1.64689 9.64689C1.69334 9.60033 1.74852 9.56339 1.80926 9.53818C1.87001 9.51297 1.93513 9.5 2.00089 9.5C2.06666 9.5 2.13178 9.51297 2.19253 9.53818C2.25327 9.56339 2.30845 9.60033 2.35489 9.64689L5.00089 12.2939L7.64689 9.64689C7.69338 9.60041 7.74857 9.56353 7.80931 9.53837C7.87005 9.51321 7.93515 9.50026 8.00089 9.50026C8.06664 9.50026 8.13174 9.51321 8.19248 9.53837C8.25322 9.56353 8.30841 9.60041 8.35489 9.64689C8.40138 9.69338 8.43826 9.74857 8.46342 9.80931C8.48858 9.87005 8.50153 9.93515 8.50153 10.0009C8.50153 10.0666 8.48858 10.1317 8.46342 10.1925C8.43826 10.2532 8.40138 10.3084 8.35489 10.3549L5.35489 13.3549C5.30845 13.4015 5.25327 13.4384 5.19253 13.4636C5.13178 13.4888 5.06666 13.5018 5.00089 13.5018C4.93513 13.5018 4.87001 13.4888 4.80926 13.4636C4.74852 13.4384 4.69334 13.4015 4.64689 13.3549L1.64689 10.3549C1.60033 10.3084 1.56339 10.2533 1.53818 10.1925C1.51297 10.1318 1.5 10.0667 1.5 10.0009C1.5 9.93513 1.51297 9.87001 1.53818 9.80926C1.56339 9.74852 1.60033 9.69334 1.64689 9.64689Z"
+                                                        fill="black" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5 2.5C5.13261 2.5 5.25979 2.55268 5.35355 2.64645C5.44732 2.74021 5.5 2.86739 5.5 3V12C5.5 12.1326 5.44732 12.2598 5.35355 12.3536C5.25979 12.4473 5.13261 12.5 5 12.5C4.86739 12.5 4.74021 12.4473 4.64645 12.3536C4.55268 12.2598 4.5 12.1326 4.5 12V3C4.5 2.86739 4.55268 2.74021 4.64645 2.64645C4.74021 2.55268 4.86739 2.5 5 2.5Z"
+                                                        fill="black" />
+                                                </svg>
+
+                                                <span class="ms-2 text-sm text-dark-100">Ordenar</span>
+                                            </button>
+                                            <ul class="dropdown-menu right-0 left-none">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Cards -->
-                        <div class="d-flex flex-wrap justify-content-center vista-row vista-activ mb-5 px-1 ">
+                        <div class="d-flex flex-wrap justify-content-center vista-row vista-active mb-5 px-1">
                             <div class="px-1 py-2 p-sm-2 p-lg-12px vista-col">
                                 <div
                                     class="card product-card mobile-width mx-auto shadow-2 rounded-16px overflow-hidden shadow-10">
@@ -1008,7 +1036,7 @@
     <!-- Footer Section Start -->
     <footer>
         <div class="bg-gray-900 w-100 py-4 py-lg-5">
-            <div class="container max-w-1440px py-2">
+            <div class="container max-w-1440px px-3 py-2">
                 <div class="d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center py-3">
                     <div class="col-lg-3 mb-4 mb-lg-0">
                         <svg width="182" height="33" viewBox="0 0 182 33" fill="none"
@@ -1068,7 +1096,9 @@
         </div>
         <div class="bg-dark-200 py-12px">
             <div class="container max-w-1440px">
-                <p class="text-white opacity-50 mb-0 text-end">Copyright © 2020. LogoIpsum. All rights reserved.</p>
+                <p class="text-white opacity-50 mb-0 text-end pe-3 footer-copyright">Copyright © 2020. LogoIpsum. All
+                    rights reserved.
+                </p>
             </div>
         </div>
     </footer>
@@ -1116,7 +1146,7 @@
 
         // When your page loads
         $(function () {
-            var vista = false;
+            var vista = true;
             // When the toggle areas in your navbar are clicked, toggle them
             $("#vista").click(function (e) {
                 if (vista = !vista) {

@@ -573,6 +573,10 @@
     border-radius: 2px;
 }
 
+.mobile-order-btn::after {
+    display: none;
+}
+
 /* Week Checkbox */
 
 .weekDays-selector input {
@@ -666,12 +670,20 @@
 
 /* Footer */
 
-footer .nav-menu {
+footer .nav-menu a {
     font-size: 14px;
+    font-weight: 400 !important;
+}
+
+.footer-copyright {
+    font-size: 12.8px;
 }
 
 @media (min-width: 991px) {
-    footer .nav-menu {
+    footer .nav-menu a {
+        font-size: 16px;
+    }
+    .footer-copyright {
         font-size: 16px;
     }
 }
