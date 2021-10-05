@@ -606,8 +606,9 @@
     width: 37px;
     min-width: 37px;
     max-width: 37px;
-    margin-right: 3px;
-    line-height: 31px;
+    margin-right: 6px;
+    padding-left: 2px;
+    line-height: 32px;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
@@ -648,14 +649,17 @@
 
 .weekDays-selector .weekday:checked+label::after {
     z-index: -1;
-    top: 1px;
-    left: 1px;
-    width: 35px;
-    min-width: 35px;
-    max-width: 35px;
-    height: 30px;
-    min-height: 30px;
-    max-height: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(2px, 2px);
+    width: 33px;
+    min-width: 33px;
+    max-width: 33px;
+    height: 28px;
+    min-height: 28px;
+    max-height: 28px;
     background: #fff;
     display: block;
     content: "";
