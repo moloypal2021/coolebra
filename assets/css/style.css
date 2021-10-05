@@ -619,7 +619,6 @@
     min-width: 37px;
     max-width: 37px;
     margin-right: 6px;
-    padding-left: 2px;
     line-height: 32px;
     font-size: 16px;
     text-align: center;
@@ -631,6 +630,7 @@
 .weekDays-selector .weekday:checked+label {
     color: #212529;
     border: 1px solid rgba(0, 0, 0, 0.0);
+    padding-left: 2px;
 }
 
 /* .weekDays-selector .weekday:checked+label::after {
