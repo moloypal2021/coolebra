@@ -91,8 +91,8 @@
                     <li class="nav-item ms-1">
                         <a class="nav-link font-weight-medium text-black" href="#">Contacto</a>
                     </li>
-                    <li class="nav-item mx-1">
-                        <a class="nav-link text-center bg-gradient-blue-purple text-white rounded px-5 px-lg-2 py-1"
+                    <li class="nav-item mx-1 mt-2 mt-lg-0">
+                        <a class="nav-link text-center text-sm bg-gradient-blue-purple text-white rounded px-5 px-lg-2 py-1"
                             href="#">Login</a>
                     </li>
 
@@ -145,31 +145,36 @@
 
                 <!-- Filter -->
                 <div class="px-3 pt-4 filter-area accordion" id="accordionPanelsStayOpenExample">
-                    <h4 class="font-inter fw-bold text-black mb-12px">Filtro</h4>
-                    <input type="text" class="form-control font-lato px-4 py-12px text-dark-100"
-                        placeholder="Filtrar por palabras">
+                    <div class="pb-1">
+                        <h4 class="font-inter fw-bold text-black mb-12px">Filtro</h4>
+                        <input type="text" class="form-control font-lato px-4 py-12px text-dark-100"
+                            style="width: 280px;" placeholder="Filtrar por palabras">
+                    </div>
 
-                    <div class="accordion-item border-0">
-                        <h6 class="pt-4 mt-2 mb-4 accordion-header border-0" id="panelsStayOpen-headingOne">
-                            <button class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                                aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                Descuento
-                            </button>
-                        </h6>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                            aria-labelledby="panelsStayOpen-headingOne">
-                            <div class="d-flex align-items-center mb-4 pb-1">
-                                <input type="text" class="form-control font-inter text-gray-600 w-96px"
-                                    placeholder="20%" value="20%">
-                                <svg class="mx-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.64689 1.77971C4.69334 1.73314 4.74851 1.6962 4.80926 1.67099C4.87001 1.64579 4.93513 1.63281 5.00089 1.63281C5.06666 1.63281 5.13178 1.64579 5.19253 1.67099C5.25327 1.6962 5.30845 1.73314 5.35489 1.77971L11.3549 7.77971C11.4015 7.82615 11.4384 7.88133 11.4636 7.94207C11.4888 8.00282 11.5018 8.06794 11.5018 8.13371C11.5018 8.19947 11.4888 8.26459 11.4636 8.32534C11.4384 8.38608 11.4015 8.44126 11.3549 8.48771L5.35489 14.4877C5.26101 14.5816 5.13367 14.6343 5.00089 14.6343C4.86812 14.6343 4.74078 14.5816 4.64689 14.4877C4.55301 14.3938 4.50026 14.2665 4.50026 14.1337C4.50026 14.0009 4.55301 13.8736 4.64689 13.7797L10.2939 8.13371L4.64689 2.48771C4.60033 2.44126 4.56339 2.38609 4.53818 2.32534C4.51297 2.26459 4.5 2.19947 4.5 2.13371C4.5 2.06794 4.51297 2.00282 4.53818 1.94207C4.56339 1.88133 4.60033 1.82615 4.64689 1.77971Z"
-                                        fill="#67748E" />
-                                </svg>
-                                <input type="text" class="form-control font-inter text-gray-600 w-96px"
-                                    placeholder="100%" value="100%">
+
+                    <div class="pt-3 mt-4 border-t-0.5">
+                        <div class="accordion-item border-0">
+                            <h6 class="mb-4 accordion-header border-0" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Descuento
+                                </button>
+                            </h6>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="d-flex align-items-center mb-4 pb-1">
+                                    <input type="text" class="form-control font-inter text-gray-600 w-96px"
+                                        placeholder="20%" value="20%">
+                                    <svg class="mx-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.64689 1.77971C4.69334 1.73314 4.74851 1.6962 4.80926 1.67099C4.87001 1.64579 4.93513 1.63281 5.00089 1.63281C5.06666 1.63281 5.13178 1.64579 5.19253 1.67099C5.25327 1.6962 5.30845 1.73314 5.35489 1.77971L11.3549 7.77971C11.4015 7.82615 11.4384 7.88133 11.4636 7.94207C11.4888 8.00282 11.5018 8.06794 11.5018 8.13371C11.5018 8.19947 11.4888 8.26459 11.4636 8.32534C11.4384 8.38608 11.4015 8.44126 11.3549 8.48771L5.35489 14.4877C5.26101 14.5816 5.13367 14.6343 5.00089 14.6343C4.86812 14.6343 4.74078 14.5816 4.64689 14.4877C4.55301 14.3938 4.50026 14.2665 4.50026 14.1337C4.50026 14.0009 4.55301 13.8736 4.64689 13.7797L10.2939 8.13371L4.64689 2.48771C4.60033 2.44126 4.56339 2.38609 4.53818 2.32534C4.51297 2.26459 4.5 2.19947 4.5 2.13371C4.5 2.06794 4.51297 2.00282 4.53818 1.94207C4.56339 1.88133 4.60033 1.82615 4.64689 1.77971Z"
+                                            fill="#67748E" />
+                                    </svg>
+                                    <input type="text" class="form-control font-inter text-gray-600 w-96px"
+                                        placeholder="100%" value="100%">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -219,7 +224,8 @@
                                 </div>
                                 <div class="d-flex align-items-center mb-3">
                                     <input type="checkbox" id="checkAll" class="custom-check" />
-                                    <label for="checkAll" class="text-dark-100 font-lato ms-2">Todos los días</label>
+                                    <label for="checkAll" class="text-dark-100 font-lato ms-2">Todos los
+                                        días</label>
                                 </div>
                             </div>
                         </div>
@@ -271,6 +277,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="pt-3 border-t-0.5">
                         <div class="accordion-item border-0">
                             <h6 class="mb-12px accordion-header border-0" id="panelsStayOpen-headingFour">
                                 <button class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
@@ -292,7 +300,8 @@
                                 </div>
                                 <div class="d-flex align-items-center mb-3">
                                     <input type="checkbox" id="Santander" class="custom-check" />
-                                    <label for="Santander" class="text-dark-100 font-lato ms-2">Banco Santander</label>
+                                    <label for="Santander" class="text-dark-100 font-lato ms-2">Banco
+                                        Santander</label>
                                 </div>
                             </div>
                         </div>
