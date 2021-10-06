@@ -544,7 +544,6 @@
 @media (max-width: 991px) {
     .vista-active .product-card {
         width: 175px;
-        border: 0 !important;
     }
     .vista-active .product-card .card-body {
         padding: 4px;
