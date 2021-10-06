@@ -281,14 +281,17 @@
     padding-bottom: 12px;
 }
 
+.pb-10 {
+    padding-bottom: 120px !important;
+}
+
 @media (min-width: 991px) {
     .p-lg-12px {
         padding: 12px !important;
     }
-}
-
-.pb-10 {
-    padding-bottom: 120px !important;
+    .pb-lg-0 {
+        padding-bottom: 0px !important;
+    }
 }
 
 /* ======= Opacity ============= */
@@ -320,7 +323,7 @@
     /* border: 1px solid var(--gray-200) !important; */
     /* border-radius: 8px !important; */
     position: absolute !important;
-    top: -0.5px;
+    top: 0;
     bottom: 0;
     right: 38px;
     height: 36.8px;
