@@ -14,7 +14,7 @@
     font-family: 'AnthologY';
     font-style: normal;
     font-weight: 400;
-    src: local('AnthologY'), url('../font/Anthology-Sans.otf') format('otf');
+    src: local('AnthologY'), url('../font/Anthology-Sans.woff2') format('woff2');
 }
 
 /*======= Import Font End ======= */
@@ -693,8 +693,8 @@
 }
 
 .aplicar-button {
-    position: sticky;
-    position: -webkit-sticky;
+    position: sticky !important;
+    position: -webkit-sticky !important;
     bottom: 0;
 }
 
