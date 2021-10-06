@@ -699,6 +699,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 2;
 }
 
 @media (min-width: 578px) {
@@ -713,26 +714,24 @@
     display: none !important;
 }
 
+.weekDays-selector .weekday-box {
+    margin-right: 3px;
+}
+
 .weekDays-selector .weekday+label {
-    display: inline-block;
-    border-radius: 15px;
-    background: #fff;
-    color: #67748E;
-    border: 1px solid #DEE2E6;
+    background-color: #fff;
     height: 32px;
     min-height: 32px;
     max-height: 32px;
     width: 37px;
     min-width: 37px;
     max-width: 37px;
-    margin-right: 6px;
-    line-height: 32px;
-    font-size: 16px;
+    border: 1px solid #DEE2E6;
+    line-height: 30px;
     text-align: center;
-    cursor: pointer;
+    border-radius: 16px;
     position: relative;
-    z-index: 1;
-    user-select: none;
+    z-index: 2;
 }
 
 @media (min-width: 991px) {
@@ -742,74 +741,53 @@
 }
 
 .weekDays-selector .weekday:checked+label {
-    color: #212529;
-    border: 1px solid rgba(0, 0, 0, 0.0);
-    /* padding-left: 2px; */
+    border-color: rgba(0, 0, 0, 0);
 }
 
-.weekDays-selector .weekday:checked+label:hover {
-    color: #212529;
-    background: #ffffff;
-}
-
-.weekDays-selector .weekday:checked+label::before {
-    z-index: -3;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    width: 37px;
-    min-width: 37px;
-    max-width: 37px;
-    height: 32px;
-    min-height: 32px;
-    max-height: 32px;
+.weekDays-selector .weekday:checked+label::after {
+    content: "";
+    background: #682296;
     background-image: linear-gradient(45deg, #3358DE 0%, #682296 50%, #F50FA5 100%);
     background-image: -webkit-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%);
     background-image: -moz-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%);
     background-image: -o-linear-gradient( 45deg, #3358DE 0%, #682296 50%, #F50FA5 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    content: "";
+    height: 32px;
+    min-height: 32px;
+    max-height: 32px;
+    width: 37px;
+    min-width: 37px;
+    max-width: 37px;
     position: absolute;
-    border-radius: 15px;
-}
-
-.weekDays-selector .weekday:checked+label::after {
-    z-index: -1;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    /* transform: translate(1.1px, 1.1px);
-    width: 33px;
-    min-width: 33px;
-    max-width: 33px;
-    height: 28px;
-    min-height: 28px;
-    max-height: 28px; */
-    /* transform: translate(1.1px, 1.1px); */
-    border: 1.5px solid rgba(0, 0, 0, 0.0);
-    width: 37px;
-    min-width: 37px;
-    max-width: 37px;
+    z-index: -2;
+    border-radius: 16px;
+}
+
+.weekDays-selector .weekday:checked+label::before {
+    content: "";
+    background-color: rgb(255, 255, 255);
     height: 32px;
     min-height: 32px;
     max-height: 32px;
-    background: #fff;
-    display: block;
-    content: "";
+    width: 37px;
+    min-width: 37px;
+    max-width: 37px;
     position: absolute;
-    background-clip: content-box;
-    border-radius: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+    line-height: 28px;
+    background-clip: padding-box;
+    z-index: -1;
+    border-radius: 16px;
 }
 
 .custom-check {
-    /* width: 20px;
-    height: 20px;
-    border: 1px solid #CED4DA;
-    border-radius: 6px !important; */
-    /* appearance: none; */
     position: absolute;
     opacity: 0;
 }
