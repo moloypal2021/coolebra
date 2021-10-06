@@ -693,9 +693,16 @@
 }
 
 .aplicar-button {
-    position: sticky !important;
-    position: -webkit-sticky !important;
+    position: fixed !important;
+    left: 0;
     bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 578px) {
+    .aplicar-button {
+        width: 345px;
+    }
 }
 
 /* Week Checkbox */
