@@ -319,7 +319,7 @@
 .searchbar {
     position: relative;
     z-index: 1036;
-    border: 0 !important;
+    border: 0;
 }
 
 .searchbar input {
@@ -330,7 +330,7 @@
     position: absolute !important;
     top: 0;
     bottom: 0;
-    right: 38px;
+    right: 34px;
     /* height: 36.8px; */
     width: 280px !important;
     z-index: 9999;
@@ -338,6 +338,7 @@
 
 .searchbar button {
     border: 0;
+    padding: 5px 5px 5px 14px;
 }
 
 @media (min-width: 991px) {

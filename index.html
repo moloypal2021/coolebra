@@ -23,7 +23,7 @@
                 <div class="input-group hover:border-gray flex-nowrap searchbar rounded-8px bg-white" id="search-input">
                     <input type="text" class="form-control bg-white border-0 d-lg-block shadow-none"
                         placeholder="¿Qué estás buscando hoy?">
-                    <button class="input-group-text bg-transparent border-0 rounded-0" id="search-icon">
+                    <button class="input-group-text bg-transparent shadow-none border-0 rounded-0" id="search-icon">
                         <img src="./assets/images/Search.png" alt="" width="24px" height="24px">
                     </button>
                 </div>
@@ -1183,6 +1183,7 @@
                     $("#filterSticky").css("z-index", "0");
                     $("#search-input").addClass("border-gray");
                     if ($(window).width() < 992) {
+                        $("#search-input").removeClass("border-gray");
                         $("#search-input input").css("display", "block");
                     }
                 }
