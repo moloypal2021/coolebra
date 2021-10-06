@@ -715,6 +715,7 @@
 }
 
 .weekDays-selector .weekday-box {
+    display: inline;
     margin-right: 3px;
 }
 
@@ -727,11 +728,13 @@
     min-width: 37px;
     max-width: 37px;
     border: 1px solid #DEE2E6;
-    line-height: 30px;
     text-align: center;
     border-radius: 16px;
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 991px) {
@@ -741,7 +744,7 @@
 }
 
 .weekDays-selector .weekday:checked+label {
-    border-color: rgba(0, 0, 0, 0);
+    border: 0px;
 }
 
 .weekDays-selector .weekday:checked+label::after {
@@ -781,11 +784,12 @@
     left: 0;
     right: 0;
     border: 1px solid rgba(0, 0, 0, 0);
-    line-height: 28px;
     background-clip: padding-box;
     z-index: -1;
     border-radius: 16px;
 }
+
+/* ========= Custom Check Box ======== */
 
 .custom-check {
     position: absolute;
