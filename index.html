@@ -20,10 +20,10 @@
             <a class="navbar-brand ms-1" href="#"><img src="./assets/images/logo.svg" alt="" class="logo"></a>
 
             <div class="d-flex ms-auto">
-                <div class="input-group hover:border-gray flex-nowrap searchbar bg-white" id="search-input">
+                <div class="input-group hover:border-gray flex-nowrap searchbar rounded-8px bg-white" id="search-input">
                     <input type="text" class="form-control bg-white border-0 d-lg-block shadow-none"
                         placeholder="¿Qué estás buscando hoy?">
-                    <button class="input-group-text bg-transparent border-0 p-2" id="search-icon">
+                    <button class="input-group-text bg-transparent border-0" id="search-icon">
                         <img src="./assets/images/Search.png" alt="" width="24px" height="24px">
                     </button>
                 </div>
@@ -341,10 +341,10 @@
                         </nav>
 
                         <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="d-flex align-items-center breadcumb-title">
+                            <div class="d-flex align-items-end breadcumb-title">
                                 <h2 class="text-gray-900 font-anthology text-uppercase">
                                     Bussscaste:</h2>
-                                <p class="h5 text-gray-600 fw-normal font-inter ms-2">“Panorama fin de semana”</p>
+                                <p class="h5 text-gray-600 fw-normal font-inter pb-1 ms-2">“Panorama fin de semana”</p>
                             </div>
                             <div class="navbar d-none d-lg-block">
                                 <div class="btn-group">
@@ -1160,31 +1160,23 @@
                     $(".search-black-screen").css("display", "block");
                     $("#filterSticky").css("z-index", "0");
                     $("#search-input").addClass("border-gray");
+                    if ($(window).width() < 992) {
+                        $("#search-input input").css("display", "block");
+                    }
                 }
             });
             $(".search-black-screen").click(function (e) {
-
-                searchActive = !searchActive
+                searchActive = false
                 if (!searchActive) {
                     $(".search-black-screen").css("display", "none");
                     $("#filterSticky").css("z-index", "1030");
                     $("#search-input").removeClass("border-gray");
-                }
-
-                // Mobile Screen Size Search Input Toggle 
-                if ($(window).width() < 992) {
-                    e.preventDefault();
-                    $("#search-input input").toggle();
+                    if ($(window).width() < 992) {
+                        $("#search-input input").css("display", "none");
+                    }
                 }
             });
 
-            // Mobile Searh Input
-            $("#search-icon").click(function (e) {
-                if ($(window).width() < 992) {
-                    e.preventDefault();
-                    $("#search-input input").toggle();
-                }
-            });
         })
 
         // Vista Card

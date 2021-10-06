@@ -309,12 +309,11 @@
 .searchbar input {
     display: none;
     background-color: #fff;
-    border: 1px solid var(--gray-200) !important;
-    border-radius: 8px !important;
+    /* border: 1px solid var(--gray-200) !important; */
+    /* border-radius: 8px !important; */
     position: absolute !important;
-    width: 210px !important;
-    top: 48px;
-    right: -32px;
+    right: 38px;
+    width: 280px !important;
     z-index: 9999;
 }
 
