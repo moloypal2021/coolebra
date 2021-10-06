@@ -622,7 +622,7 @@
     bottom: 0;
     left: 0;
     height: calc(100vh - 56px);
-    overflow-y: scroll;
+    overflow-y: auto;
     box-shadow: 16px 8px 16px rgba(0, 0, 0, 0.08);
 }
 
