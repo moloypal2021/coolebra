@@ -302,13 +302,13 @@
 }
 
 .searchbar {
+    background-color: #fff;
     position: relative;
     z-index: 1036;
 }
 
 .searchbar input {
     display: none;
-    background-color: #fff;
     /* border: 1px solid var(--gray-200) !important; */
     /* border-radius: 8px !important; */
     position: absolute !important;
