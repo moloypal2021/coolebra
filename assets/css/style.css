@@ -615,6 +615,7 @@
 
 .filter-header {
     position: relative;
+    width: 345px;
     z-index: 111;
 }
 
@@ -627,6 +628,14 @@
     .filter-area {
         position: fixed !important;
     }
+    .close-filterbar {
+        transform: translateX(-100%);
+        transition: 0.2s ease-in-out;
+    }
+    .open-filterbar {
+        transform: translateX(0);
+        transition: 0.2s ease-in-out;
+    }
 }
 
 @media (max-width: 576px) {
@@ -635,6 +644,9 @@
     }
     .filter-area {
         width: 100%;
+    }
+    .filter-header {
+        width: 100vw;
     }
 }
 

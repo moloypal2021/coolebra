@@ -71,12 +71,12 @@
         <div class="d-flex position-relative">
 
             <!-- Filter bar Start -->
-            <nav class="d-lg-block bg-white sidebar filterbar collapse collapse-horizontal" id="filter-bar">
+            <nav class="d-flex bg-white sidebar filterbar collapse close-filterbar" id="filter-bar">
                 <form action="" class="">
                     <!-- Filter Mobile Navbar -->
                     <div class="navbar py-2 bg-whtie shadow-2 shadow-lg-none filter-header">
                         <div class="d-flex w-100 align-items-center justify-content-between">
-                            <button class="btn filter-button">
+                            <div class="btn filter-button">
                                 <svg width="52" height="24" viewBox="0 0 52 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -100,7 +100,7 @@
                                         </linearGradient>
                                     </defs>
                                 </svg>
-                            </button>
+                            </div>
                             <h5 class="text-dark-100 mb-0">Filtrar</h5>
                             <input type="reset"
                                 class="btn bg-transparent shadow-none text-purple-100 active:text-purple-100"
@@ -1162,11 +1162,16 @@
 
 
         // Filter Bar Toggle
-        $(".filter-button").click(function (e) {
-            e.preventDefault();
-            $("#filter-bar").toggle();
+        $(function () {
+            var openFilterbar = false;
+            $(".filter-button").click(function (e) {
+                if (openFilterbar = !openFilterbar) {
+                    $("#filter-bar").removeClass("close-filterbar").addClass("open-filterbar");
+                } else {
+                    $("#filter-bar").removeClass("open-filterbar").addClass("close-filterbar");
+                }
+            });
         });
-
 
         // SearchInput
         $(function () {
@@ -1194,7 +1199,7 @@
                 }
             });
 
-        })
+        });
 
         // Vista Card
         $(function () {
