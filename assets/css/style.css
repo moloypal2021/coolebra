@@ -129,6 +129,10 @@
     color: var(--purple-100);
 }
 
+.active\:text-purple-100:active, .active\:text-purple-100:focus {
+    color: var(--purple-100);
+}
+
 /* -------- Border Color --------- */
 
 .border-gray-200 {

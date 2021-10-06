@@ -72,246 +72,257 @@
 
             <!-- Filter bar Start -->
             <nav class="d-lg-block bg-white sidebar filterbar collapse collapse-horizontal" id="filter-bar">
-                <!-- Filter Mobile Navbar -->
-                <div class="navbar py-2 bg-whtie shadow-2 shadow-lg-none filter-header">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <button class="btn filter-button">
-                            <svg width="52" height="24" viewBox="0 0 52 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8.78039 6.97034C8.85023 7.04001 8.90565 7.12277 8.94346 7.21389C8.98127 7.30501 9.00073 7.40269 9.00073 7.50134C9.00073 7.59999 8.98127 7.69767 8.94346 7.78879C8.90565 7.87991 8.85023 7.96267 8.78039 8.03234L4.80989 12.0013L8.78039 15.9703C8.85012 16.0401 8.90543 16.1229 8.94317 16.214C8.98091 16.3051 9.00034 16.4027 9.00034 16.5013C9.00034 16.6 8.98091 16.6976 8.94317 16.7887C8.90543 16.8798 8.85012 16.9626 8.78039 17.0323C8.71066 17.1021 8.62787 17.1574 8.53676 17.1951C8.44565 17.2329 8.348 17.2523 8.24939 17.2523C8.15077 17.2523 8.05312 17.2329 7.96201 17.1951C7.8709 17.1574 7.78812 17.1021 7.71839 17.0323L3.21839 12.5323C3.14854 12.4627 3.09313 12.3799 3.05532 12.2888C3.01751 12.1977 2.99805 12.1 2.99805 12.0013C2.99805 11.9027 3.01751 11.805 3.05532 11.7139C3.09313 11.6228 3.14854 11.54 3.21839 11.4703L7.71839 6.97034C7.78806 6.9005 7.87082 6.84508 7.96194 6.80727C8.05305 6.76946 8.15074 6.75 8.24939 6.75C8.34804 6.75 8.44572 6.76946 8.53684 6.80727C8.62796 6.84508 8.71072 6.9005 8.78039 6.97034Z"
-                                    fill="url(#paint0_linear)" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M3.75 12C3.75 11.8011 3.82902 11.6103 3.96967 11.4697C4.11032 11.329 4.30109 11.25 4.5 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H4.5C4.30109 12.75 4.11032 12.671 3.96967 12.5303C3.82902 12.3897 3.75 12.1989 3.75 12Z"
-                                    fill="url(#paint1_linear)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear" x1="3.63377" y1="19.1832" x2="12.1704"
-                                        y2="16.3711" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#3358DE" />
-                                        <stop offset="0.5" stop-color="#682296" />
-                                        <stop offset="1" stop-color="#F50FA5" />
-                                    </linearGradient>
-                                    <linearGradient id="paint1_linear" x1="5.57689" y1="13.0258" x2="6.18212"
-                                        y2="9.01427" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#3358DE" />
-                                        <stop offset="0.5" stop-color="#682296" />
-                                        <stop offset="1" stop-color="#F50FA5" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </button>
-                        <h5 class="text-dark-100 mb-0">Filtrar</h5>
-                        <a href="#" class="nav-link text-purple-100">Limpiar</a>
-                    </div>
-                </div>
-
-                <!-- Filter -->
-                <div class="px-3 pt-4 filter-area accordion" id="accordionPanelsStayOpenExample">
-
-                    <div class="pb-1">
-                        <h4 class="font-inter fw-bold text-black mb-12px">Filtro</h4>
-                        <input type="text"
-                            class="form-control hover:border-red focus:border-red font-lato px-4 py-12px text-dark-100 shadow-none"
-                            style="width: 280px;" placeholder="Filtrar por palabras">
-                    </div>
-
-
-                    <div class="pt-3 mt-4 border-t-0.5">
-                        <div class="accordion-item border-0">
-                            <h6 class="mb-4 accordion-header border-0" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                    Descuento
-                                </button>
-                            </h6>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingOne">
-                                <div class="d-flex align-items-center mb-4 pb-1">
-                                    <input type="text"
-                                        class="form-control hover:border-red focus:border-red font-inter shadow-none text-gray-600 w-96px"
-                                        placeholder="20%" value="20%">
-                                    <svg class="mx-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M4.64689 1.77971C4.69334 1.73314 4.74851 1.6962 4.80926 1.67099C4.87001 1.64579 4.93513 1.63281 5.00089 1.63281C5.06666 1.63281 5.13178 1.64579 5.19253 1.67099C5.25327 1.6962 5.30845 1.73314 5.35489 1.77971L11.3549 7.77971C11.4015 7.82615 11.4384 7.88133 11.4636 7.94207C11.4888 8.00282 11.5018 8.06794 11.5018 8.13371C11.5018 8.19947 11.4888 8.26459 11.4636 8.32534C11.4384 8.38608 11.4015 8.44126 11.3549 8.48771L5.35489 14.4877C5.26101 14.5816 5.13367 14.6343 5.00089 14.6343C4.86812 14.6343 4.74078 14.5816 4.64689 14.4877C4.55301 14.3938 4.50026 14.2665 4.50026 14.1337C4.50026 14.0009 4.55301 13.8736 4.64689 13.7797L10.2939 8.13371L4.64689 2.48771C4.60033 2.44126 4.56339 2.38609 4.53818 2.32534C4.51297 2.26459 4.5 2.19947 4.5 2.13371C4.5 2.06794 4.51297 2.00282 4.53818 1.94207C4.56339 1.88133 4.60033 1.82615 4.64689 1.77971Z"
-                                            fill="#67748E" />
-                                    </svg>
-                                    <input type="text"
-                                        class="form-control hover:border-red focus:border-red font-inter shadow-none text-gray-600 w-96px"
-                                        placeholder="100%" value="100%">
-                                </div>
-                            </div>
+                <form action="" class="">
+                    <!-- Filter Mobile Navbar -->
+                    <div class="navbar py-2 bg-whtie shadow-2 shadow-lg-none filter-header">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                            <button class="btn filter-button">
+                                <svg width="52" height="24" viewBox="0 0 52 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.78039 6.97034C8.85023 7.04001 8.90565 7.12277 8.94346 7.21389C8.98127 7.30501 9.00073 7.40269 9.00073 7.50134C9.00073 7.59999 8.98127 7.69767 8.94346 7.78879C8.90565 7.87991 8.85023 7.96267 8.78039 8.03234L4.80989 12.0013L8.78039 15.9703C8.85012 16.0401 8.90543 16.1229 8.94317 16.214C8.98091 16.3051 9.00034 16.4027 9.00034 16.5013C9.00034 16.6 8.98091 16.6976 8.94317 16.7887C8.90543 16.8798 8.85012 16.9626 8.78039 17.0323C8.71066 17.1021 8.62787 17.1574 8.53676 17.1951C8.44565 17.2329 8.348 17.2523 8.24939 17.2523C8.15077 17.2523 8.05312 17.2329 7.96201 17.1951C7.8709 17.1574 7.78812 17.1021 7.71839 17.0323L3.21839 12.5323C3.14854 12.4627 3.09313 12.3799 3.05532 12.2888C3.01751 12.1977 2.99805 12.1 2.99805 12.0013C2.99805 11.9027 3.01751 11.805 3.05532 11.7139C3.09313 11.6228 3.14854 11.54 3.21839 11.4703L7.71839 6.97034C7.78806 6.9005 7.87082 6.84508 7.96194 6.80727C8.05305 6.76946 8.15074 6.75 8.24939 6.75C8.34804 6.75 8.44572 6.76946 8.53684 6.80727C8.62796 6.84508 8.71072 6.9005 8.78039 6.97034Z"
+                                        fill="url(#paint0_linear)" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.75 12C3.75 11.8011 3.82902 11.6103 3.96967 11.4697C4.11032 11.329 4.30109 11.25 4.5 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H4.5C4.30109 12.75 4.11032 12.671 3.96967 12.5303C3.82902 12.3897 3.75 12.1989 3.75 12Z"
+                                        fill="url(#paint1_linear)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear" x1="3.63377" y1="19.1832" x2="12.1704"
+                                            y2="16.3711" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#3358DE" />
+                                            <stop offset="0.5" stop-color="#682296" />
+                                            <stop offset="1" stop-color="#F50FA5" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear" x1="5.57689" y1="13.0258" x2="6.18212"
+                                            y2="9.01427" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#3358DE" />
+                                            <stop offset="0.5" stop-color="#682296" />
+                                            <stop offset="1" stop-color="#F50FA5" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <h5 class="text-dark-100 mb-0">Filtrar</h5>
+                            <input type="reset"
+                                class="btn bg-transparent shadow-none text-purple-100 active:text-purple-100"
+                                value="Limpiar">
                         </div>
                     </div>
 
-                    <div class="pt-3 border-t-0.5">
-                        <div class="accordion-item border-0">
-                            <h6 class="mb-12px accordion-header border-0" id="panelsStayOpen-headingTwo">
-                                <button class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
-                                    Días de la semana
-                                </button>
-                            </h6>
-                            <!-- <h6 class="font-inter fw-bold text-black mb-12px">Días de la semana</h6> -->
+                    <!-- Filter -->
+                    <div class="px-3 pt-4 filter-area accordion" id="accordionPanelsStayOpenExample">
 
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingTwo">
-                                <div class="weekDays-selector d-flex align-items-center mb-4">
-                                    <div
-                                        class="d-flex align-items-center justify-content-center text-center weekday-box">
-                                        <input type="checkbox" id="weekday-mon" checked class="weekday" />
-                                        <label class="font-inter" for="weekday-mon">L</label>
+                        <div class="pb-1">
+                            <h4 class="font-inter fw-bold text-black mb-12px">Filtro</h4>
+                            <input type="text"
+                                class="form-control hover:border-red focus:border-red font-lato px-4 py-12px text-dark-100 shadow-none"
+                                style="width: 280px;" placeholder="Filtrar por palabras">
+                        </div>
+
+
+                        <div class="pt-3 mt-4 border-t-0.5">
+                            <div class="accordion-item border-0">
+                                <h6 class="mb-4 accordion-header border-0" id="panelsStayOpen-headingOne">
+                                    <button
+                                        class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        Descuento
+                                    </button>
+                                </h6>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="d-flex align-items-center mb-4 pb-1">
+                                        <input type="text"
+                                            class="form-control hover:border-red focus:border-red font-inter shadow-none text-gray-600 w-96px"
+                                            placeholder="20%">
+                                        <svg class="mx-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.64689 1.77971C4.69334 1.73314 4.74851 1.6962 4.80926 1.67099C4.87001 1.64579 4.93513 1.63281 5.00089 1.63281C5.06666 1.63281 5.13178 1.64579 5.19253 1.67099C5.25327 1.6962 5.30845 1.73314 5.35489 1.77971L11.3549 7.77971C11.4015 7.82615 11.4384 7.88133 11.4636 7.94207C11.4888 8.00282 11.5018 8.06794 11.5018 8.13371C11.5018 8.19947 11.4888 8.26459 11.4636 8.32534C11.4384 8.38608 11.4015 8.44126 11.3549 8.48771L5.35489 14.4877C5.26101 14.5816 5.13367 14.6343 5.00089 14.6343C4.86812 14.6343 4.74078 14.5816 4.64689 14.4877C4.55301 14.3938 4.50026 14.2665 4.50026 14.1337C4.50026 14.0009 4.55301 13.8736 4.64689 13.7797L10.2939 8.13371L4.64689 2.48771C4.60033 2.44126 4.56339 2.38609 4.53818 2.32534C4.51297 2.26459 4.5 2.19947 4.5 2.13371C4.5 2.06794 4.51297 2.00282 4.53818 1.94207C4.56339 1.88133 4.60033 1.82615 4.64689 1.77971Z"
+                                                fill="#67748E" />
+                                        </svg>
+                                        <input type="text"
+                                            class="form-control hover:border-red focus:border-red font-inter shadow-none text-gray-600 w-96px"
+                                            placeholder="100%">
                                     </div>
-                                    <div
-                                        class="d-flex align-items-center justify-content-center text-center weekday-box">
-                                        <input type="checkbox" id="weekday-tue" checked class="weekday" />
-                                        <label class="font-inter" for="weekday-tue">M</label>
-                                    </div>
-                                    <div
-                                        class="d-flex align-items-center justify-content-center text-center weekday-box">
-                                        <input type="checkbox" id="weekday-wed" checked class="weekday" />
-                                        <label class="font-inter" for="weekday-wed">M</label>
-                                    </div>
-                                    <div
-                                        class="d-flex align-items-center justify-content-center text-center weekday-box">
-                                        <input type="checkbox" id="weekday-thu" checked class="weekday" />
-                                        <label class="font-inter" for="weekday-thu">J</label>
-                                    </div>
-                                    <div
-                                        class="d-flex align-items-center justify-content-center text-center weekday-box">
-                                        <input type="checkbox" id="weekday-fri" class="weekday" />
-                                        <label class="font-inter" for="weekday-fri">V</label>
-                                    </div>
-                                    <div
-                                        class="d-flex align-items-center justify-content-center text-center weekday-box">
-                                        <input type="checkbox" id="weekday-sat" class="weekday" />
-                                        <label class="font-inter" for="weekday-sat">S</label>
-                                    </div>
-                                    <div
-                                        class="d-flex align-items-center justify-content-center text-center weekday-box">
-                                        <input type="checkbox" id="weekday-sun" class="weekday" />
-                                        <label class="font-inter" for="weekday-sun">D</label>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="checkAll" class="custom-check" />
-                                    <label for="checkAll" class="text-dark-100 font-lato">Todos los
-                                        días</label>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pt-3 border-t-0.5">
-                        <div class="accordion-item border-0">
-                            <h6 class="mb-12px accordion-header border-0" id="panelsStayOpen-headingThree">
-                                <button class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
-                                    type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseThree">
-                                    Categorías
-                                </button>
-                            </h6>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingThree">
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Panoramas" class="custom-check" />
-                                    <label for="Panoramas" class="text-dark-100 font-lato">Panoramas</label>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Promociones" class="custom-check" />
-                                    <label for="Promociones" class="text-dark-100 font-lato">Promociones</label>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Sabores" class="custom-check" />
-                                    <label for="Sabores" class="text-dark-100 font-lato">Sabores</label>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Salud" class="custom-check" />
-                                    <label for="Salud" class="text-dark-100 font-lato">Salud y Belleza</label>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Servicios" class="custom-check" />
-                                    <label for="Servicios" class="text-dark-100 font-lato">Servicios</label>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Shopping" class="custom-check" />
-                                    <label for="Shopping" class="text-dark-100 font-lato">Shopping</label>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Viajes" class="custom-check" />
-                                    <label for="Viajes" class="text-dark-100 font-lato">Viajes</label>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Destacados" class="custom-check" />
-                                    <label for="Destacados" class="text-dark-100 font-lato">Destacados</label>
+                        <div class="pt-3 border-t-0.5">
+                            <div class="accordion-item border-0">
+                                <h6 class="mb-12px accordion-header border-0" id="panelsStayOpen-headingTwo">
+                                    <button
+                                        class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        Días de la semana
+                                    </button>
+                                </h6>
+                                <!-- <h6 class="font-inter fw-bold text-black mb-12px">Días de la semana</h6> -->
+
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="weekDays-selector d-flex align-items-center mb-4">
+                                        <div
+                                            class="d-flex align-items-center justify-content-center text-center weekday-box">
+                                            <input type="checkbox" id="weekday-mon" class="weekday" />
+                                            <label class="font-inter" for="weekday-mon">L</label>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center justify-content-center text-center weekday-box">
+                                            <input type="checkbox" id="weekday-tue" class="weekday" />
+                                            <label class="font-inter" for="weekday-tue">M</label>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center justify-content-center text-center weekday-box">
+                                            <input type="checkbox" id="weekday-wed" class="weekday" />
+                                            <label class="font-inter" for="weekday-wed">M</label>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center justify-content-center text-center weekday-box">
+                                            <input type="checkbox" id="weekday-thu" class="weekday" />
+                                            <label class="font-inter" for="weekday-thu">J</label>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center justify-content-center text-center weekday-box">
+                                            <input type="checkbox" id="weekday-fri" class="weekday" />
+                                            <label class="font-inter" for="weekday-fri">V</label>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center justify-content-center text-center weekday-box">
+                                            <input type="checkbox" id="weekday-sat" class="weekday" />
+                                            <label class="font-inter" for="weekday-sat">S</label>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center justify-content-center text-center weekday-box">
+                                            <input type="checkbox" id="weekday-sun" class="weekday" />
+                                            <label class="font-inter" for="weekday-sun">D</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="checkAll" class="custom-check" />
+                                        <label for="checkAll" class="text-dark-100 font-lato">Todos los
+                                            días</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pt-3 border-t-0.5">
-                        <div class="accordion-item border-0">
-                            <h6 class="mb-12px accordion-header border-0" id="panelsStayOpen-headingFour">
-                                <button class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
-                                    type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseFour">
-                                    Mis convenios
-                                </button>
-                            </h6>
-                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingFour">
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Banco" class="custom-check" />
-                                    <label for="Banco" class="text-dark-100 font-lato">Banco de Chile</label>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="BCI" class="custom-check" />
-                                    <label for="BCI" class="text-dark-100 font-lato">Banco BCI</label>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Santander" class="custom-check" />
-                                    <label for="Santander" class="text-dark-100 font-lato">Banco
-                                        Santander</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-3 border-t-0.5">
-                        <div class="accordion-item border-0">
-                            <h6 class="mb-12px accordion-header border-0" id="panelsStayOpen-headingFive">
-                                <button class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
-                                    type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseFive">
-                                    Locales
-                                </button>
-                            </h6>
-                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingFive">
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Valle" class="custom-check" />
-                                    <label for="Valle" class="text-dark-100 font-lato">Valle Nevado</label>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" id="Rappi" class="custom-check" />
-                                    <label for="Rappi" class="text-dark-100 font-lato">Rappi</label>
+                        <div class="pt-3 border-t-0.5">
+                            <div class="accordion-item border-0">
+                                <h6 class="mb-12px accordion-header border-0" id="panelsStayOpen-headingThree">
+                                    <button
+                                        class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseThree">
+                                        Categorías
+                                    </button>
+                                </h6>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Panoramas" class="custom-check" />
+                                        <label for="Panoramas" class="text-dark-100 font-lato">Panoramas</label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Promociones" class="custom-check" />
+                                        <label for="Promociones" class="text-dark-100 font-lato">Promociones</label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Sabores" class="custom-check" />
+                                        <label for="Sabores" class="text-dark-100 font-lato">Sabores</label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Salud" class="custom-check" />
+                                        <label for="Salud" class="text-dark-100 font-lato">Salud y Belleza</label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Servicios" class="custom-check" />
+                                        <label for="Servicios" class="text-dark-100 font-lato">Servicios</label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Shopping" class="custom-check" />
+                                        <label for="Shopping" class="text-dark-100 font-lato">Shopping</label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Viajes" class="custom-check" />
+                                        <label for="Viajes" class="text-dark-100 font-lato">Viajes</label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Destacados" class="custom-check" />
+                                        <label for="Destacados" class="text-dark-100 font-lato">Destacados</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="pt-3 border-t-0.5">
+                            <div class="accordion-item border-0">
+                                <h6 class="mb-12px accordion-header border-0" id="panelsStayOpen-headingFour">
+                                    <button
+                                        class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseFour">
+                                        Mis convenios
+                                    </button>
+                                </h6>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingFour">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Banco" class="custom-check" />
+                                        <label for="Banco" class="text-dark-100 font-lato">Banco de Chile</label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="BCI" class="custom-check" />
+                                        <label for="BCI" class="text-dark-100 font-lato">Banco BCI</label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Santander" class="custom-check" />
+                                        <label for="Santander" class="text-dark-100 font-lato">Banco
+                                            Santander</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 border-t-0.5 mb-5 pb-5">
+                            <div class="accordion-item border-0">
+                                <h6 class="mb-12px accordion-header border-0" id="panelsStayOpen-headingFive">
+                                    <button
+                                        class="accordion-button text-black fw-bold font-lato shadow-none bg-white p-0"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseFive">
+                                        Locales
+                                    </button>
+                                </h6>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingFive">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Valle" class="custom-check" />
+                                        <label for="Valle" class="text-dark-100 font-lato">Valle Nevado</label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="Rappi" class="custom-check" />
+                                        <label for="Rappi" class="text-dark-100 font-lato">Rappi</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="bg-white py-3 px-3 aplicar-button d-lg-none">
+                            <button
+                                class="btn bg-gradient-blue-purple border-0 text-white w-100 text-center font-inter text-sm py-1">Aplicar</button>
+                        </div>
+
                     </div>
-
-
-                    <div class="bg-white py-3 px-3 aplicar-button d-lg-none">
-                        <button
-                            class="btn bg-gradient-blue-purple border-0 text-white w-100 text-center font-inter text-sm py-1">Aplicar</button>
-                    </div>
-
-                </div>
+                </form>
             </nav>
             <!-- Filter bar End -->
 
