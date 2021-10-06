@@ -281,6 +281,10 @@
     padding-bottom: 12px;
 }
 
+.pt-12px {
+    padding-top: 12px;
+}
+
 .pb-10 {
     padding-bottom: 120px !important;
 }
