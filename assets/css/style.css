@@ -318,7 +318,7 @@
 
 .searchbar {
     position: relative;
-    z-index: 1036;
+    z-index: 1040;
     border: 0;
 }
 
@@ -376,7 +376,7 @@
     right: 0;
     background: #343A40 !important;
     opacity: 0.8;
-    z-index: 1033;
+    z-index: 1039;
     display: none;
 }
 
@@ -437,13 +437,11 @@
 
 .product-card {
     width: 280px;
-    /* filter: drop-shadow(0px 8px 16px rgba(155, 134, 165, 0.25)); */
     box-shadow: 0px 8px 16px rgba(155, 134, 165, 0.25);
 }
 
 .product-card:hover {
     transition: 0.1s ease-in-out;
-    /* filter: drop-shadow(0px 8px 16px rgba(155, 134, 165, 0.75)) !important; */
     box-shadow: 0px 8px 16px rgba(155, 134, 165, 0.75);
 }
 
@@ -459,7 +457,7 @@
     position: absolute;
     top: 8px;
     left: 8px;
-    z-index: 10000 !important;
+    z-index: 5 !important;
 }
 
 .card-comapny-icon img {
@@ -546,13 +544,9 @@
 @media (max-width: 991px) {
     .vista-active .product-card {
         width: 175px;
-        /* filter: drop-shadow(0px 2px 6px rgba(155, 134, 165, 0));
-        box-shadow: 0px 2px 6px rgba(155, 134, 165, 0.25); */
     }
     .vista-active .product-card:hover {
         transition: 0.05s ease-in-out;
-        /* filter: drop-shadow(0px 2px 6px rgba(155, 134, 165, 0.0)) !important;
-        box-shadow: 0px 2px 6px rgba(155, 134, 165, 0.50); */
     }
     .vista-active .product-card .card-body {
         padding: 4px;
